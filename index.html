@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客 | 探索 · 发现 · 分享</title>
+    <meta name="description" content="Yiteng 的个人博客——记录技术成长，分享摄影、黑胶音乐、消费电子与环球旅行的生活故事。">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <!-- 分享卡片 -->
+    <meta property="og:title" content="我的个人博客 | 探索 · 发现 · 分享">
+    <meta property="og:description" content="记录技术成长，分享摄影、黑胶音乐、消费电子与环球旅行的生活故事。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ytxue.netlify.app/2.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="preload" as="image" href="1.webp">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 主题防闪烁：渲染前确定深浅色 -->
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">我的博客</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html">科技日报</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slider-track">
+                <div class="slide active">
+                    <div class="slide-media"><img src="1.webp" alt="轮播图1" fetchpriority="high"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="2.webp" alt="轮播图2"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="3.webp" alt="轮播图3"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="4.webp" alt="轮播图4"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="5.webp" alt="轮播图5"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="6.webp" alt="轮播图6"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="7.webp" alt="轮播图7"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="8.webp" alt="露易丝湖与独木舟"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="15.webp" alt="落基山谷全景"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-media"><img src="19.webp" alt="马蹄湾"></div>
+                </div>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+                <span class="dot" data-slide="5"></span>
+                <span class="dot" data-slide="6"></span>
+                <span class="dot" data-slide="7"></span>
+                <span class="dot" data-slide="8"></span>
+                <span class="dot" data-slide="9"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">探索 · 发现 · 分享</h1>
+            <p class="hero-subtitle">记录技术成长，分享生活感悟</p>
+            <div class="hero-buttons">
+                <a href="#blog" class="btn btn-primary">阅读文章</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新动态跑马灯 -->
+    <div class="ticker" aria-label="最新动态">
+        <div class="ticker-track">
+            <span class="ticker-item"><span class="ticker-dot"></span><b>新文</b>欧美黑胶流行音乐推荐 已更新</span>
+            <span class="ticker-item"><span class="ticker-dot"></span><b>在听</b>Bill Evans《Waltz for Debby》</span>
+            <span class="ticker-item"><span class="ticker-dot"></span><b>在读</b>《芯片战争》</span>
+            <span class="ticker-item"><span class="ticker-dot"></span><b>在拍</b>富士 X-T30 III</span>
+            <span class="ticker-item"><span class="ticker-dot"></span><b>刚回来</b>温哥华 → 班夫 → 贾斯珀</span>
+            <span class="ticker-item"><span class="ticker-dot"></span><b>每天 8:00</b>科技日报，5 分钟读完</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>新文</b>欧美黑胶流行音乐推荐 已更新</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>在听</b>Bill Evans《Waltz for Debby》</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>在读</b>《芯片战争》</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>在拍</b>富士 X-T30 III</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>刚回来</b>温哥华 → 班夫 → 贾斯珀</span>
+            <span class="ticker-item" aria-hidden="true"><span class="ticker-dot"></span><b>每天 8:00</b>科技日报，5 分钟读完</span>
+        </div>
+    </div>
+
+    <!-- 个人介绍区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="profile.webp" alt="个人照片" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">关于我</h2>
+                    <p class="about-text">
+                        Hey！我是Yiteng，一个对世界充满好奇的数字游民🌍。热爱科技、迷恋摄影、沉迷音乐，偶尔还会被消费电子种草。
+                        在这个博客里，我会分享我的生活随笔、技术思考和旅行故事。
+                    </p>
+                    <p class="about-text">
+                        生活不只是代码，还有诗和远方。我用镜头记录瞬间，用黑胶感受时光，用脚步丈量世界。
+                        相信科技让生活更美好，也相信生活给了科技更多灵感。
+                    </p>
+                    <div class="skills">
+                        <h3>我的标签</h3>
+                        <div class="skill-tags">
+                            <a href="article4.html" class="skill-tag">📷 摄影</a>
+                            <a href="article1.html" class="skill-tag">🎵 音乐</a>
+                            <a href="article2.html" class="skill-tag">📱 消费电子</a>
+                            <a href="article5.html" class="skill-tag">✈️ 环球客</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客文章区域 -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">最新文章</h2>
+
+            <!-- 分类筛选 + 搜索 -->
+            <div class="blog-toolbar" role="group" aria-label="按分类筛选">
+                <button class="filter-chip active" type="button" data-filter="all">全部</button>
+                <button class="filter-chip" type="button" data-filter="音乐推荐">音乐推荐</button>
+                <button class="filter-chip" type="button" data-filter="科技前沿">科技前沿</button>
+                <button class="filter-chip" type="button" data-filter="硬核科技">硬核科技</button>
+                <button class="filter-chip" type="button" data-filter="摄影分享">摄影分享</button>
+                <button class="filter-chip" type="button" data-filter="旅行日记">旅行日记</button>
+            </div>
+
+            <div class="blog-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                <input type="search" id="blogSearch" placeholder="搜索标题或关键词…" aria-label="搜索文章">
+            </div>
+
+            <div class="blog-empty" id="blogEmpty">没有找到匹配的文章，换个关键词试试。</div>
+
+            <div class="blog-grid">
+                <article class="blog-card" data-category="音乐推荐" onclick="location.href='article1.html'">
+                    <div class="blog-image">
+                        <img src="1.webp" alt="欧美黑胶流行音乐推荐" loading="lazy" decoding="async">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">音乐推荐</span>
+                        <h3 class="blog-title">欧美黑胶流行音乐推荐</h3>
+                        <p class="blog-excerpt">从经典到当代，那些值得一听的黑胶唱片精选...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2026-03-12</span>
+                            <span class="blog-read">5分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="科技前沿" onclick="location.href='article2.html'">
+                    <div class="blog-image">
+                        <img src="2.webp" alt="Apple最新产品发布与50周年前瞻" loading="lazy" decoding="async">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">科技前沿</span>
+                        <h3 class="blog-title">Apple最新产品发布与50周年前瞻</h3>
+                        <p class="blog-excerpt">回顾创新历程，展望下一个五十年的科技革命...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2026-03-10</span>
+                            <span class="blog-read">8分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="硬核科技" onclick="location.href='article3.html'">
+                    <div class="blog-image">
+                        <img src="3.webp" alt="芯片未来集成度的技术走向" loading="lazy" decoding="async">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">硬核科技</span>
+                        <h3 class="blog-title">芯片未来集成度的技术走向</h3>
+                        <p class="blog-excerpt">摩尔定律的延续与突破，芯片技术的下一个十年...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2026-03-08</span>
+                            <span class="blog-read">6分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="摄影分享" onclick="location.href='article4.html'">
+                    <div class="blog-image">
+                        <img src="4.webp" alt="摄影爱好者技术思考——以富士X-T30 III为例" loading="lazy" decoding="async">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">摄影分享</span>
+                        <h3 class="blog-title">摄影爱好者技术思考——以富士X-T30 III为例</h3>
+                        <p class="blog-excerpt">器材不是一切，但合适的器材能让创作更加自由...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2026-03-05</span>
+                            <span class="blog-read">7分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="旅行日记" onclick="location.href='article5.html'">
+                    <div class="blog-image">
+                        <img src="19.webp" alt="周游世界的下一站：美国" loading="lazy" decoding="async">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">旅行日记</span>
+                        <h3 class="blog-title">周游世界的下一站：美国</h3>
+                        <p class="blog-excerpt">从东海岸到西海岸，一场关于自由与梦想的旅程...</p>
+                        <div class="blog-meta">
+                            <span class="blog-date">2026-03-02</span>
+                            <span class="blog-read">10分钟阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科技日报 -->
+    <section id="daily" class="daily-section">
+        <div class="container">
+            <h2 class="section-title">科技日报</h2>
+            <div class="daily-card">
+                <div class="daily-card-left">
+                    <span class="daily-eyebrow">AI · DAILY</span>
+                    <h3 class="daily-title">每天早上 8 点，<br>5 分钟读完科技圈</h3>
+                    <p class="daily-copy">把 AI 与科技行业一天里真正重要的变化，压缩成一份短报。不追热点堆砌，只留那些会影响你判断的几条。</p>
+                    <ul class="daily-points">
+                        <li>只留重要的：一天的信息量，压到 5 分钟</li>
+                        <li>带判断：不只复述新闻，也说我怎么看</li>
+                        <li>可执行：值得试的工具、值得读的长文</li>
+                    </ul>
+                    <a href="daily.html" class="btn-solid">查看往期 →</a>
+                </div>
+                <div class="daily-card-right">
+                    <span class="issue-tag">最新 · No.018</span>
+                    <div class="issue-big">智能体开始自己办坏事了</div>
+                    <p class="issue-sub">一天之内五起智能体安全事件，它们指向同一条线。</p>
+                    <a class="btn-light" href="issue-018.html">读这一期 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旅行足迹 -->
+    <section id="travel" class="footprint">
+        <div class="container">
+            <h2 class="section-title">旅行足迹</h2>
+            <p class="footprint-intro">用脚步丈量世界，把见过的风景留在这里。</p>
+            <div class="footprint-grid">
+                <a href="gallery.html" class="foot-card">
+                    <img src="3.webp" alt="富士山与樱花" loading="lazy" decoding="async">
+                    <div class="foot-body">
+                        <div class="foot-title">日本</div>
+                        <div class="foot-meta">东京的夜、富士山下的便利店、樱花季</div>
+                    </div>
+                </a>
+                <a href="article5.html" class="foot-card">
+                    <img src="19.webp" alt="美国公路旅行" loading="lazy" decoding="async">
+                    <div class="foot-body">
+                        <div class="foot-title">美国</div>
+                        <div class="foot-meta">从东海岸到西海岸，公路、城市与自由</div>
+                    </div>
+                </a>
+                <a href="gallery.html" class="foot-card">
+                    <img src="5.webp" alt="曼谷 BTS 天桥" loading="lazy" decoding="async">
+                    <div class="foot-body">
+                        <div class="foot-title">泰国 · 曼谷</div>
+                        <div class="foot-meta">天桥下的车流，和一杯冰咖啡</div>
+                    </div>
+                </a>
+                <a href="gallery.html" class="foot-card">
+                    <img src="8.webp" alt="加拿大落基山露易丝湖" loading="lazy" decoding="async">
+                    <div class="foot-body">
+                        <div class="foot-title">加拿大 · 落基山</div>
+                        <div class="foot-meta">2026 国庆 · 温哥华 → 班夫 → 贾斯珀</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="contact-intro">如果你有任何问题或合作意向，欢迎与我联系</p>
+            <div class="contact-links">
+                <a href="mailto:yitenghsueh@gmail.com" class="contact-link">
+                    <span class="contact-icon">✉</span>
+                    <span class="contact-text">发送邮件</span>
+                </a>
+                <a href="https://www.instagram.com/yitenghsueh" class="contact-link">
+                    <span class="contact-icon">📷</span>
+                    <span class="contact-text">Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

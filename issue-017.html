@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI PC 卖了一亿四千万台，Agent 渗透率不到 5% | 科技日报</title>
+    <meta name="description" content="黄仁勋今年 6 月发布这颗芯片时说过一句话，这是「PC 行业 40 年来首次彻底重新设计与再造」。同一周，另外三件事也在发生。苹果董事长库克确认，国内的苹果 AI 功能本月开始测试">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="AI PC 卖了一亿四千万台，Agent 渗透率不到 5% | 科技日报">
+    <meta property="og:description" content="黄仁勋今年 6 月发布这颗芯片时说过一句话，这是「PC 行业 40 年来首次彻底重新设计与再造」。同一周，另外三件事也在发生。苹果董事长库克确认，国内的苹果 AI 功能本月开始测试">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ytxue.netlify.app/issue-017-1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span class="issue-badge">第 017 期 · 2026-10-20 星期二</span>
+            <h1 class="article-title">AI PC 卖了一亿四千万台，Agent 渗透率不到 5%</h1>
+            <div class="article-meta">
+                <span class="article-date">2026-10-20 星期二</span>
+                <span class="article-read-time">约 8 分钟</span>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-content">
+        <div class="container">
+            <div class="article-body">
+                <p class="lede">上周五晚上，北京双井的京东 Mall 挤满了人。</p>
+                <p class="lede">不是抢手机。是英伟达基于 RTX Spark 超级芯片（内部代号 N1X）的笔记本电脑，全球新品首发体验会。粉丝和 KOL 把展台围住，社群里一片沸腾。</p>
+                <p>黄仁勋今年 6 月发布这颗芯片时说过一句话，这是「PC 行业 40 年来首次彻底重新设计与再造」。</p>
+                <p>同一周，另外三件事也在发生。苹果董事长库克确认，国内的苹果 AI 功能本月开始测试、12 月发布。Meta 把 8160 亿参数的 Muse Spark Open 开源，联手苹果让它在两台 M5 Ultra Mac Studio 上跑起来。国产端侧算力公司后摩智能公布，M50 量产不到一年拿下 150 多个产品定点。</p>
+                <p>四方同时下场。端侧 AI 的战争，提前开打了。</p>
+                <p>但这里有个数字，值得先摆出来。</p>
+                <div class="stat-row">
+                    <div class="stat-card">
+                        <div class="stat-value">1.43 亿台</div>
+                        <div class="stat-label">Gartner 预测 2026 年全球 AI PC 出货量</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">55%</div>
+                        <div class="stat-label">对应的 PC 渗透率</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">不到5%</div>
+                        <div class="stat-label">AI Agent 的真实渗透率和使用率</div>
+                    </div>
+                </div>
+                <p class="kicker">一边是硬件侧的全面开战，一边是应用侧的冷清。这道缝，就是本期主推要拆的东西。</p>
+                <h2><span class="section-no">01</span>一、四年了，端侧 AI 一直在翻红</h2>
+                <p>故事要从两年前讲起。</p>
+                <p>ChatGPT 引爆全球之后，英特尔第一个喊出了新概念，AI PC，个人 AI 电脑。随后 AI 手机、AI 平板、AI 智能体终端、具身智能、具身终端，概念一个接一个往外冒。</p>
+                <p>英特尔当时给出的目标是，AI PC 终端要到 1 亿台。</p>
+                <p>四年过去，这个数字眼看就要兑现。Gartner 等机构预测，2026 年全球 AI PC 出货量将达到 1.43 亿台以上，渗透率约 55%，第一次超过传统 PC 产品。</p>
+                <p>硬件侧赢了。可应用侧呢？</p>
+                <p>真实 Agent 渗透率和使用率，不到 5%。</p>
+                <p>一边是过半的渗透率，一边是个位数的使用率。问题出在哪？</p>
+                <figure class="article-image-block">
+                    <img src="issue-017-1.webp" alt="信息图" class="chart-img" loading="lazy" decoding="async">
+                </figure>
+                <p>硬件铺完，应用没跟上</p>
+                <h2><span class="section-no">02</span>二、四家的牌，加一张国内的</h2>
+                <p>将四方的动作逐一拆解，能看清它们各自的位置。</p>
+                <p>英伟达瞄的是 PC 的计算核心。RTX Spark 不是一块普通独显，它要抢的是 PC 的处理器位置。黄仁勋说「40 年来首次彻底重新设计」，指的是算力中枢从 CPU 主导转向 NPU 主导。</p>
+                <p>苹果押的是本地加隐私。库克确认国内 AI 功能 12 月发布，走的还是端侧优先路线。细节比表面更有意思，业内分析指出这一轮没有新 Siri，模型更新还要过审，另有分析提到折叠 iPhone 里装的是两个阿里的模型。苹果守住的是入口和隐私叙事，模型可以借外力。</p>
+                <p>Meta 抢的是开源加桌面可用。Muse Spark Open 用 MLX 框架优化，两台 M5 Ultra Mac Studio 凑出 1TB 统一内存就能完整运行 8160 亿参数模型。这是同级模型第一次上桌面。它补的正是苹果缺的那块。</p>
+                <p>后摩智能守的是功耗。创始人吴强讲得很直白，大模型从说话到做事，Agent 带来的 token 消耗有 2 到 3 个数量级的提升，这对计算效率提出了极高要求，M50 的核心优势就是功耗低。</p>
+                <p>国内还有一张容易被漏看的牌。后摩的 M50 量产不到一年，拿到 150 多个产品定点，服务客户超过百家，覆盖 Agent Computer、智能移动终端、具身智能机器人、边缘推理。</p>
+                <p>Agent Computer 这个词值得留意。它指的是专门为 Agent 长时程任务设计的终端形态，不是传统 PC 加个 NPU 那么简单。Agent 任务要连续跑几十上百次模型调用，对内存带宽、功耗墙、散热持续性的要求，跟跑一次摘要是两个量级。</p>
+                <p>吴强那句话要再读一遍。它过去被当成端侧的机会，其实首先是一道功耗考题。</p>
+                <p>150 个定点说明产业界已经在押注。但定点到量产、量产到真实使用率，中间还有两道坎。</p>
+                <figure class="article-image-block">
+                    <img src="issue-017-2.webp" alt="信息图" class="chart-img" loading="lazy" decoding="async">
+                </figure>
+                <p>四方同时下场</p>
+                <h2><span class="section-no">03</span>三、那 5% 卡在哪</h2>
+                <p>硬件铺完了，应用没跟上。这道坎不在算力，而在三个更实在的地方。</p>
+                <p>第一道坎，任务形态不匹配。 端侧 AI 过去两年主打的功能是摘要、润色、文生图，这些是「单次请求、单次响应」的轻任务。而 Agent 要的是连续几十上百次调用、要跨应用操作、要长时程记忆。手机那点内存和功耗预算，撑不起这种形态。</p>
+                <p>第二道坎，模型能力还在半路。 端侧模型受体积限制，复杂推理和工具调用能力明显弱于云端。用户试两次发现办不成事，第三次就不打开了。使用率上不去，不是不想用，试过之后放弃了。</p>
+                <p>第三道坎，也是最关键的，没有出现杀手级场景。AI PC 渗透率 55% 是个硬件指标，它只统计「这台机器有 NPU」，不管「这台机器在跑 AI」。当年智能手机普及，靠的是摄像头和 App 生态两个杀手场景。端侧 AI 现在缺这么一个东西。</p>
+                <p>缺的到底是什么？细分来看，可能是一个「离了它不行」的任务，而不是一堆「有了更好」的功能。摘要和润色都属于后者，随时可以不用。前者长什么样，现在还没人答得上。这也解释了为什么使用率卡在个位数。</p>
+                <p>这三道坎叠在一起，解释了那个反差。</p>
+                <p>如果找个历史对照，会更清楚。智能手机从多点触控成熟到渗透率过半，用了大约四年，靠的是摄像头和 App 生态两个杀手场景接棒。AI PC 从概念提出到现在也是四年，硬件指标已经过半，但杀手场景还没出现。</p>
+                <p>差别在于，智能手机的杀手场景是「本来就存在的需求被满足了」，拍照和装 App 都是。端侧 AI 现在提供的多是「被创造出来的需求」，摘要、润色、文生图，这些需求在没有 AI 的时候并不存在。</p>
+                <p>创造需求的渗透速度，从来都比满足需求慢得多。这可能是 5% 背后更结构性的原因。</p>
+                <figure class="article-image-block">
+                    <img src="issue-017-3.webp" alt="信息图" class="chart-img" loading="lazy" decoding="async">
+                </figure>
+                <p>同样是四年，两条曲线</p>
+                <h2><span class="section-no">04</span>四、真正的变量在 Agent</h2>
+                <p>但别急着下结论说端侧 AI 是泡沫。</p>
+                <p>后摩吴强那句话里藏着一个重要信号，Agent 带来的 token 消耗有 2 到 3 个数量级的提升。这句话要反过来读。</p>
+                <p>如果 Agent 任务真的把 token 消耗拉高两三个数量级，那么把这些请求全部送到云端，带宽和成本都吃不消。这时候端侧就不是「可选项」，而是「必选项」。</p>
+                <p>换句话说，端侧 AI 缺的不是场景，缺的是那个能把算力吃满的场景。而 Agent 恰好就是。</p>
+                <p>现在卡在中间的是模型能力。云端模型在快速变强，端侧受功耗和内存约束跟不上，这个差距短期内未必补得齐。</p>
+                <p>一个可能的解法是分工。简单、高频、隐私敏感的任务放端侧，复杂、低频、算力密集的放云端。Meta 那台 Mac Studio 跑 816B 参数是个信号，端侧的上限在被往上推。</p>
+                <p>这个分工能不能成立，取决于一件事：云端和端侧之间的切换成本。用户不该感觉到任务在哪跑，就像当年没人关心照片存在本地还是云端。</p>
+                <figure class="article-image-block">
+                    <img src="issue-017-4.webp" alt="信息图" class="chart-img" loading="lazy" decoding="async">
+                </figure>
+                <p>端侧上行的三个杠杆</p>
+                <p>做到这一点，需要系统层的统一调度，而不是每个应用自己决定。这正是英伟达、苹果、英特尔三家都在抢的位置，也是英伟达把 RTX Spark 定位成「PC 计算核心」而非「一块显卡」的原因。</p>
+                <h2><span class="section-no">05</span>五、这场战争谁会赢</h2>
+                <p>把时间轴拉长看，这场战争的胜负手不在芯片性能，在两个更底层的东西。</p>
+                <p>一个是生态位。英伟达的 CUDA 生态统治了云端训练，端侧如果还是它的地盘，等于一条护城河通吃两头。苹果 MLX 加 Meta 开源模型的组合，被认为正是在 CUDA 的墙上找缝。英特尔押注 2028 年的 Razor Lake-AX，每瓦性能提升 9%、功耗降 18%，也是在赌端侧的能效比。</p>
+                <p>另一个是入口。谁掌握入口，谁就掌握模型分发。苹果掌握手机和电脑入口，英伟达掌握算力，Meta 掌握开源生态。三家各有一段入口，谁也不完整。</p>
+                <p>这场战争的意义，不止于一次芯片升级。它背后，是 PC 产业四十年权力结构的一次松动。</p>
+                <p>上一次 PC 的计算核心发生转移，还是上世纪八十年代的事。那一次之后，诞生了微软和英特尔两个时代霸主。</p>
+                <p>那场转移的技术诱因，跟今天有几分相像。图形界面让 PC 从命令行走向大众，所需算力超出了 CPU 能经济承载的范围，才催出了独立的图形处理器。今天 Agent 把 token 消耗拉高两三个数量级，压的也是同一根杠杆。</p>
+                <p>区别在于，上一轮的赢家通吃了三十年。这一轮的护城河建在生态和入口上，而这两样东西，四家各拿一半。</p>
+                <p>所以这场战争大概率不会出现一个微软。更可能的结果是分层，英伟达拿算力，苹果拿入口，Meta 拿生态，国产厂商拿功耗和成本。</p>
+                <p>而对普通人来说，值得等的不是下一场发布会，是那个杀手场景。它出现之前，1.43 亿台 AI PC 里的大部分，还会继续安静地躺在一角。硬件已经就位，故事才刚开始。</p>
+                <p>本文数据来自 Gartner 等机构预测、各公司公开发布会及管理层公开表述，其中出货量与渗透率为机构预测值，模型参数与性能数据为厂商口径。不构成任何投资建议。</p>
+                <h3>本文信息来源</h3>
+                <p>小泰腾的科技日报 · 第 017 期 · 2026-10-20</p>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>智能纪元 AGI — 英伟达、苹果同时下场，端边 AI 战争提前开打（2026-10-19） · <a href="https://www.163.com/dy/article/L9IGG3VC0511C4AA.html" target="_blank" rel="noopener">163.com</a></li>
+                    <li>腾讯研究院 — AI 速递 20261019（2026-10-19） · <a href="https://www.sohu.com/a/1089419880_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>中科曙光官网 — 曙光 8000 十大前沿应用成果发布（2026-10-18） · <a href="https://www.sugon.com/cut?id=3029&amp;nav_id=48" target="_blank" rel="noopener">sugon.com</a></li>
+                    <li>机器之心 — 算力、算法、数据之外：南芥智能押注智能增长的第四要素（2026-10） · <a href="http://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&amp;mid=2651063125&amp;idx=2&amp;sn=4de0bf62f1f1a4e67105ef9d663dced8" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>IT 爆破手 — 六分钱跑赢 GPT：南大孵化团队的模型群智能（2026-10） · <a href="http://mp.weixin.qq.com/s?__biz=MzkwNjIwOTc4OQ==&amp;mid=2247486814&amp;idx=1&amp;sn=7f8ff515a1f21b81116672926483130a" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>Fruition — The Frontier · 10-19-2026（2026-10-19） · <a href="https://fruition.net/frontier/" target="_blank" rel="noopener">fruition.net</a></li>
+                </ol>
+
+                <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="https://mp.weixin.qq.com/s/pw0DLdjIXi80OFwLDMlqng" target="_blank" rel="noopener">mp.weixin.qq.com/s/pw0DLdjIXi80OFwLDMlqng</a></p>
+            </div>
+
+            <div class="article-nav">
+                <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>
+            </div>
+
+            <div class="share-bar">
+                <span class="share-label">分享这篇</span>
+                <button class="share-btn" type="button" data-share="copy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                    复制链接
+                </button>
+                <button class="share-btn" type="button" data-share="native" id="shareNative" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                    系统分享
+                </button>
+                <a class="share-btn" id="shareWeibo" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5 2 5.5 2 7 0"/><circle cx="9" cy="10" r="0.6" fill="currentColor"/><circle cx="15" cy="10" r="0.6" fill="currentColor"/></svg>
+                    微博
+                </a>
+            </div>
+
+            <section class="comments">
+                <h3 class="comments-title">留言</h3>
+                <div class="comments-hint">
+                    评论功能正在接入中，暂时可以通过 <a href="mailto:yitenghsueh@gmail.com">邮件</a> 或 Instagram 找我聊天。
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

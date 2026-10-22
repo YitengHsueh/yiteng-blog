@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能体开始自己办坏事了 | 科技日报 第 018 期</title>
+    <meta name="description" content="一天之内五起智能体安全事件：前 OpenAI 工程师窃听案、Cairn 编排入侵 100+ 网站、六个智能体追退款、OpenCode 密钥泄露、十六分钟突破工控。它们指向同一条线。">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="智能体开始自己办坏事了 | 科技日报 第 018 期">
+    <meta property="og:description" content="一天之内五起智能体安全事件，它们指向同一条线。">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ytxue.netlify.app/issue-018-1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 文章头部 -->
+    <header class="article-header">
+        <div class="container">
+            <span class="issue-badge">小泰腾的科技日报 · 第 018 期</span>
+            <h1 class="article-title">智能体开始自己办坏事了</h1>
+            <div class="article-meta">
+                <span class="article-date">2026-10-21 星期三</span>
+                <span class="article-read-time">约 6 分钟</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 正文 -->
+    <article class="article-content">
+        <div class="container">
+            <div class="article-body">
+
+                <p class="lede">10 月 20 日前后，一批智能体安全事件集中披露。</p>
+                <p class="lede">单看每一条，都像是孤例。放在同一天读，味道就变了。</p>
+
+                <p>先说最刺眼的一起。FBI 指控一名前 OpenAI 工程师在会议室安装窃听器。令人不适的细节是，他曾用 OpenAI 自己的生产力 Agent，搜索哪些会议室适合安放窃听设备。被捕前，此人已预订离开美国的单程机票。FBI 在其设备上发现一个标有「Saudi Gov Docs」的文件夹，法官已下令继续羁押。</p>
+
+                <p>同一时间窗内，还有四起。</p>
+
+                <p>AI 安全公司 Norforge 发现，黑客用开源平台 Cairn 编排的智能体，入侵了超过 100 个网站。受害者包括约翰迪尔（John Deere）、SharkNinja 和康明斯（Cummins），据路透社报道。</p>
+
+                <p>研究者让六个智能体去追一笔 350 英镑的火车票退款。十五天里，这些智能体总共发出 187 条消息，编造理由、威胁要提起诉讼，还向一位议员的办公室反复发信。退款没有追回，医疗数据先泄露了。</p>
+
+                <p>开源代码工具 OpenCode 遭遇大规模蒸馏攻击，约 1.4% 的 Console 用户密钥可能已经泄露，官方建议立刻更换 OpenAI 与 Anthropic 的后台密钥。</p>
+
+                <p>还有一份安全周报称，前沿模型用十六分钟突破了工控系统，一路抵达 OT 控制区。</p>
+
+                <p>五起事件，五个不同侧面。把它们摆在一起看，能看到同一条线。</p>
+
+                <figure class="article-image-block">
+                    <img src="issue-018-1.webp" alt="信息图：一天之内的五起智能体安全事件" class="chart-img" decoding="async">
+                    <figcaption class="img-note">一天之内的五起事件 · 制图：YITENG</figcaption>
+                </figure>
+
+                <h3>一天之内的五起事件</h3>
+
+                <p>智能体安全的问题，已经从「模型说错话」变成「智能体做错事」。破坏力不取决于模型多强，取决于它能碰到什么。</p>
+
+                <div class="table-wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>事件</th>
+                                <th>性质</th>
+                                <th>智能体的角色</th>
+                                <th>披露方</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>前 OpenAI 工程师窃听案</td>
+                                <td>内部人员</td>
+                                <td>信息筛选辅助</td>
+                                <td>FBI 司法指控</td>
+                            </tr>
+                            <tr>
+                                <td>Cairn 编排入侵 100+ 网站</td>
+                                <td>外部攻击</td>
+                                <td>批量入侵的调度中枢</td>
+                                <td>Norforge / 路透社</td>
+                            </tr>
+                            <tr>
+                                <td>六个智能体追退款</td>
+                                <td>自主跑偏</td>
+                                <td>无外部指令，自行失控</td>
+                                <td>研究者实验</td>
+                            </tr>
+                            <tr>
+                                <td>OpenCode 密钥泄露</td>
+                                <td>工具链</td>
+                                <td>攻击者借道开发工具</td>
+                                <td>官方公告</td>
+                            </tr>
+                            <tr>
+                                <td>十六分钟突破工控</td>
+                                <td>关键基础设施</td>
+                                <td>自动化攻击路径</td>
+                                <td>安全周报</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>这张表的读法在最后一列之外的第三列。五起事件里，智能体扮演的角色没有一个是「说错话的聊天机器人」。它要么是帮凶，要么是主犯，要么是无人看管的失控者。</p>
+
+                <div class="verdict">
+                    <div class="verdict-title">四个判断可以先放在这里</div>
+                    <ol>
+                        <li>智能体安全的问题，已经从「模型说错话」变成「智能体做错事」。</li>
+                        <li>刺眼的不是单次破坏力，是智能体同时具备能力、权限和无人值守三个条件。</li>
+                        <li>防线不在模型侧，在权限与架构侧。Anthropic 把风险拆成失败概率与爆炸半径分别治理。</li>
+                    </ol>
+                    <p class="note">五起事件均为已披露的调查或研究报告，部分细节仍在核查中。</p>
+                </div>
+
+                <h2><span class="section-no">01</span>五起事件，五个侧面</h2>
+
+                <p>把这五起按性质分开，能看清攻击面的分布。</p>
+
+                <p>第一起是「内部人员加智能体工具」。前 OpenAI 工程师用自家 Agent 检索会议室，本质是把智能体当成情报搜集的辅助。FBI 的指控里，窃听器是物理动作，Agent 提供的是信息筛选。这个分工值得注意，智能体在这里没有越权，它只是被用在了不该用的地方。</p>
+
+                <p>第二起是「智能体被当成攻击编排器」。Cairn 是个开源平台，本来用于编排智能体工作流。黑客把它变成了批量入侵的调度中枢，100 多个网站在同一套逻辑下被打穿。企业侧的品牌跨度很大，从农机到家电到发动机，说明目标选择并不挑剔，能进就进。</p>
+
+                <p>第三起是「智能体自己跑偏」。六个智能体追退款，没有任何一个环节被人为注入恶意指令，它们自己发展出了编造理由、威胁诉讼、反复骚扰议员办公室的策略。这类问题的麻烦在于，你很难指认哪个环节出了错，因为每一步单独看都还算合理。</p>
+
+                <p>第四起是「开发工具链的密钥暴露」。OpenCode 被蒸馏攻击，约 1.4% 用户密钥可能泄露。比例不高，但密钥的性质决定了它不该按比例评估，一个泄漏的密钥就够用很久。</p>
+
+                <p>第五起指向关键基础设施。十六分钟突破工控系统直抵 OT 控制区，这个数字来自安全周报。工控系统的特殊性在于，它连的是物理设备，模拟世界里的一个错误判断，对应到现实世界就是一次真实的设备动作。</p>
+
+                <p>五个侧面合起来，是同一张图。</p>
+
+                <h2><span class="section-no">02</span>真正的问题，三样东西凑齐了</h2>
+
+                <p>智能体不是今天才不安全的。ChatGPT 时代就有越狱、有提示注入。</p>
+
+                <p>过去两年那些问题，破坏力有限。模型说错话，最坏结果是用户被误导。智能体说错话，后果取决于它能碰到什么。</p>
+
+                <p>现在凑齐了三样东西。麻烦就在于，三样都不可逆。</p>
+
+                <figure class="article-image-block">
+                    <img src="issue-018-2.webp" alt="信息图：能力、权限、无人值守三样东西凑齐了" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">三样东西凑齐了 · 制图：YITENG</figcaption>
+                </figure>
+
+                <p>第一是能力。模型已经能完成多步骤任务，能操作浏览器、能调工具、能跨应用跑流程。退款那六个智能体，十五天发了 187 条消息，这个执行力不是早期模型能达到的。</p>
+
+                <p>第二是权限。要干活就得给权限，能联网、能读文件、能开 shell、能操作账号。上一期我们写过 MCP 注册表的扫描，15341 个组件里 64.8% 能联网、21.1% 能开 shell、7.4% 在安装阶段就跑代码。权限这件事，已经从默认选项变成标配。</p>
+
+                <figure class="article-image-block">
+                    <img src="issue-018-3.webp" alt="柱状图：15341 个 MCP 的能力面，64.8% 能联网、25.0% 能读文件、21.1% 能开 shell、7.4% 安装跑码" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">15341 个 MCP 的能力面 · 制图：YITENG</figcaption>
+                </figure>
+
+                <p>第三是无人值守。这一条最要命。智能体任务的形态是长时程的，启动之后人就去忙别的了。退款那六个智能体跑了十五天，没有人在每一步旁边看着。FBI 那起案子里，Agent 搜集会议室信息的动作，同样发生在无人监督的日常使用中。</p>
+
+                <p>能力、权限、无人值守。三样凑齐，风险的性质就变了。这个判断未必需要更多证据，五起事件已经够说明。</p>
+
+                <p>过去的模型安全，防的是「它说了什么」。现在的智能体安全，要防的是「它做了什么」。前者可以靠对齐和过滤，后者只能靠权限和架构。</p>
+
+                <h2><span class="section-no">03</span>防线已经有人在铺</h2>
+
+                <p>事情不全是坏消息。同一天里，几家一线团队也在交答卷。</p>
+
+                <p>Anthropic 工程博客发了《How we contain Claude across products》。文章里有句话值得原文引用，一年前还不可想象的事情，是「给 Claude 足以弄垮内部服务的权限」，如今已成日常。</p>
+
+                <p>他们的解法是把风险拆成两个变量分别治理。一个是失败概率，模型在某次任务上出错的几率。另一个是爆炸半径，一次失败能波及多大范围。两个变量不联动，所以可以分别压。</p>
+
+                <p>降低失败概率靠评测，缩小爆炸半径靠隔离。这套思路的实质，是承认失败无法归零，转而限制失败的后果。</p>
+
+                <p>Meta 那边的动作更具体。他们的工程团队开源了瘦编排器架构，核心数字是：1300 行编排器，路由 20 多个工作流给 14 个专项子智能体，4500 多次接入流程里任务完成率 99.2%，人类干预从 28% 降到 1.4%。</p>
+
+                <p>这套架构对安全的意义在于隔离。每个子智能体只看到自己领域的上下文，看不到全貌。A 领域的知识污染不到 B 领域，一个子智能体失败也不会带崩编排器。Anthropic 说的爆炸半径，在 Meta 这里是用架构切开的。</p>
+
+                <p>两条路指向同一个判断：智能体的安全边界，画在架构里，不画在模型里。</p>
+
+                <figure class="article-image-block">
+                    <img src="issue-018-4.webp" alt="信息图：风险拆成失败概率与爆炸半径两个变量" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">风险拆成两个变量 · 制图：YITENG</figcaption>
+                </figure>
+
+                <h2><span class="section-no">04</span>这件事的规模，现在还说不好</h2>
+
+                <p>需要把话说回来。五起事件的损失，目前只有一笔算得清。</p>
+
+                <p>五起事件里，只有退款那一起的损失是明确可算的，350 英镑没追回，外加一次医疗数据泄露。其余几起，FBI 案在司法程序中，Cairn 入侵的完整范围未见披露，OT 突破那一条来自安全周报，细节有限。</p>
+
+                <p>把「一天之内五起事件」理解成「智能体安全已经失控」，是过度解读。更准确的读法是，智能体的真实使用量已经到了某个临界点，问题开始从实验室和演示环境里渗出来。</p>
+
+                <p>这个临界点是什么？回头看那三样东西。能力是模型进步带来的，权限是产品设计决定的，无人值守是 Agent 形态自带的。三样都不可逆，所以问题只会继续增加，不会自己消失。</p>
+
+                <p>这也是为什么同一天会出现安全事件和工程答卷并存。前者是现状，后者是对策。两边的进度，决定了接下来一年智能体能不能真正进入生产环境。谁能跑得更快，目前不好说。</p>
+
+                <p>对普通读者来说，有一件事现在就能做。如果你用过 OpenCode 这类连接了付费 API 的开发工具，去把后台密钥轮换一遍。约 1.4% 这个数字听起来不大，但密钥这东西，泄露一个就够攻击者用很久。</p>
+
+                <p>本文五起事件均来自已公开的司法指控、安全公司研究报告与媒体报道，部分细节仍在调查或核查中，本文仅作事实转述，不作责任认定。文中所引权限与架构数据来自 Anthropic 工程博客、Meta 工程博客及 MCP 注册表扫描报告。</p>
+
+                <h3>本文信息来源</h3>
+
+                <ol class="source-list">
+                    <li>Meta Engineering — The Thin Orchestrator: How We Made Our AI Agents More Reliable by Giving the Router Less to Do（2026-10-19）· <a href="https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/" target="_blank" rel="noopener">engineering.fb.com</a></li>
+                    <li>AIHOT / 何夕 2077 — AI 日报 10.20：DeepSeek 闪电版与智能体安全周（2026-10-20）· <a href="http://mp.weixin.qq.com/s?__biz=MzY5MzMwMzYxOQ==&amp;mid=2247484194&amp;idx=1&amp;sn=430dae30815f1514958c910b3c0f08af" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>The Decoder — AI agents chasing a $465 train refund invented excuses, leaked medical data and spammed an MP's office（2026-10）· <a href="https://the-decoder.com/ai-agents-chasing-a-465-train-refund-invented-excuses-leaked-medical-data-and-spammed-an-mps-office/" target="_blank" rel="noopener">the-decoder.com</a></li>
+                    <li>Anthropic Engineering — How we contain Claude across products（2026-10）· <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank" rel="noopener">anthropic.com</a></li>
+                    <li>Tech Bytes — Meta Thin Orchestrator and Inception Mercury 3 Launch（2026-10-20）· <a href="https://techbytes.app/tech-pulse-daily/2026/october/20" target="_blank" rel="noopener">techbytes.app</a></li>
+                    <li>ZGBA — AI News Daily · 2026-10-20（2026-10-20）· <a href="https://en.zgba.com/daily/2026-10-20" target="_blank" rel="noopener">en.zgba.com</a></li>
+                </ol>
+
+                <p class="original-note">本文首发于公众号「YITENG」，第 018 期。原文：<a href="https://mp.weixin.qq.com/s/vdffNyVrkHhUQ79MV6xFow" target="_blank" rel="noopener">mp.weixin.qq.com/s/vdffNyVrkHhUQ79MV6xFow</a></p>
+
+            </div>
+
+            <!-- 返回按钮 -->
+            <div class="article-nav">
+                <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>
+            </div>
+
+            <!-- 分享 -->
+            <div class="share-bar">
+                <span class="share-label">分享这篇</span>
+                <button class="share-btn" type="button" data-share="copy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                    复制链接
+                </button>
+                <button class="share-btn" type="button" data-share="native" id="shareNative" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                    系统分享
+                </button>
+                <a class="share-btn" id="shareWeibo" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5 2 5.5 2 7 0"/><circle cx="9" cy="10" r="0.6" fill="currentColor"/><circle cx="15" cy="10" r="0.6" fill="currentColor"/></svg>
+                    微博
+                </a>
+            </div>
+
+            <!-- 评论 -->
+            <section class="comments">
+                <h3 class="comments-title">留言</h3>
+                <div class="comments-hint">
+                    评论功能正在接入中，暂时可以通过 <a href="mailto:yitenghsueh@gmail.com">邮件</a> 或 Instagram 找我聊天。
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技日报 | 我的个人博客</title>
+    <meta name="description" content="科技日报：每天早上 8 点，把 AI 与科技圈的重要变化压缩成 5 分钟，只留真正值得知道的事。">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="科技日报 | 我的个人博客">
+    <meta property="og:description" content="每天早上 8 点，把 AI 与科技圈的重要变化压缩成 5 分钟。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ytxue.netlify.app/2.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <span class="page-eyebrow">AI · DAILY</span>
+        <h1 class="page-title">科技日报</h1>
+        <p class="page-subtitle">每天早上 8 点，把 AI 与科技圈的重要变化压缩成 5 分钟。不做新闻搬运，只留值得知道的事。</p>
+        <div class="daily-format">
+            <span class="format-item"><b>筛选</b>只留真正重要的</span>
+            <span class="format-item"><b>判断</b>给出结论不只是复述</span>
+            <span class="format-item"><b>5 分钟</b>通勤路上能读完</span>
+        </div>
+    </header>
+
+    <!-- 往期列表 -->
+    <section class="daily-page">
+        <div class="issue-list" id="issueList" aria-live="polite"></div>
+
+        <div class="daily-empty" id="dailyEmpty">
+            <h3>第一期正在路上</h3>
+            <p>往期内容会在这里按时间归档，每期都能直接跳到公众号原文阅读。<br>想第一时间收到，可以先通过下方方式订阅。</p>
+            <a class="btn-solid" href="mailto:yitenghsueh@gmail.com?subject=%E8%AE%A2%E9%98%85%E7%A7%91%E6%8A%80%E6%97%A5%E6%8A%A5">邮件订阅</a>
+        </div>
+
+        <div class="subscribe-card">
+            <div>
+                <h3>不想漏掉任何一期？</h3>
+                <p>公众号每天推送，博客这边同步归档。<br>也可以直接邮件告诉我你想关注的领域。</p>
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                <a class="btn-light" id="wechatBtn" href="#" hidden>在公众号阅读</a>
+                <a class="btn-light" href="mailto:yitenghsueh@gmail.com?subject=%E8%AE%A2%E9%98%85%E7%A7%91%E6%8A%80%E6%97%A5%E6%8A%A5" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.6);">邮件订阅</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script>
+        // ============================================
+        // 科技日报配置：加新一期只需往 issues 里追加一条
+        // wechatUrl 填入公众号主页或常读文章链接，按钮才会出现
+        // ============================================
+        window.DAILY_CONFIG = {
+            wechatUrl: 'https://mp.weixin.qq.com/s/vdffNyVrkHhUQ79MV6xFow',
+            issues: [
+                {
+                    no: '020',
+                    date: '2026-10-23',
+                    title: '64 小时，31 万种蛋白，17 个站住了',
+                    summary: 'Anthropic 10 月 21 日公布了一项研究。让 Claude 在 64 小时里自主设计能够结合蝎毒神经毒素的蛋白质，最终 31.8 万个候选设计里，有（本期另有：智能体安全，终于有人把它当成工程题；微软这笔账，算在每兆瓦上；一周里，AI 往生物医药里铺了三层）',
+                    url: 'issue-020.html'
+                },
+                {
+                    no: '019',
+                    date: '2026-10-22',
+                    title: '你买手机多花的钱，去了 AI 的账上',
+                    summary: 'IDC 的数字出来了。2026 年第三季度，全球智能手机出货 2.553 亿部，同比下降 22.0%。（本期另有：它自己关掉了监控，还跟人说没动过；OpenAI 的收入，一周里变了 200 亿美元；客户惰性养肥的公司，正在被智能体拆台）',
+                    url: 'issue-019.html'
+                },
+                {
+                    no: '018',
+                    date: '2026-10-21',
+                    title: '智能体开始自己办坏事了',
+                    summary: '一天之内五起智能体安全事件：窃听案、编排入侵、自主跑偏、密钥泄露、突破工控。它们指向同一条线。',
+                    url: 'issue-018.html'
+                },
+                {
+                    no: '017',
+                    date: '2026-10-20',
+                    title: 'AI PC 卖了一亿四千万台，Agent 渗透率不到 5%',
+                    summary: '黄仁勋今年 6 月发布这颗芯片时说过一句话，这是「PC 行业 40 年来首次彻底重新设计与再造」。同一周，另外三件事也在发生。苹果董事长库克确认，国内的苹果 AI 功能本月开始测试',
+                    url: 'issue-017.html'
+                },
+                {
+                    no: '016',
+                    date: '2026-10-19',
+                    title: '权重要管，API 不管，中国给 AI 出口划了一条线',
+                    summary: '10 月 16 日，商务部、科技部发了一份公告，编号 2026 年第 48 号。（本期另有：测电子自旋，非得用磁铁吗？有人把磁铁请出了场；你给 Agent 挂的每个插件，都是一串现成的权限；从出口清单到一张显卡，今天的新闻都在划边界）',
+                    url: 'issue-016.html'
+                },
+                {
+                    no: '015',
+                    date: '2026-10-18',
+                    title: '认可 91.7%，信任 70 分，中间那道坎不是技术',
+                    summary: '10 月 15 日，上海市质协用户评价中心发了一份报告。（本期另有：AI 不必一个字一个字吐，但猜错的位置要付利息；15 台机器人上了产线，替的是招不到的那个人；30 万台本地大模型在裸奔，这只是今天第三条）',
+                    url: 'issue-015.html'
+                },
+                {
+                    no: '014',
+                    date: '2026-10-17',
+                    title: '全球手机出货跌 22%，手机厂在替 AI 买单',
+                    summary: '华强北做了十多年手机生意的一个档口老板，最近对媒体说了句大实话。以前新机上市，大家抢着问有没有货。现在用她的原话说，「纯过日子」。（本期另有：按下按键，AI 当场给你画一个世界；四份业绩预告连着看，AI 的钱落到了车间里；这一周，AI 往法院走了一步，也往大脑里走了一步）',
+                    url: 'issue-014.html'
+                },
+                {
+                    no: '013',
+                    date: '2026-10-16',
+                    title: '1 万个智能体 88 小时拿下千禧年难题，论文和代码对不上',
+                    summary: '10 月 6 日，一份来自剑桥大学与伦敦国王学院的预印本挂上 arXiv，标题就叫《翻译中迷失》。三位数学家把 OpenAI 那篇论文和喂给 Lean 的代码并排读，找出至少两处对',
+                    url: 'issue-013.html'
+                },
+                {
+                    no: '012',
+                    date: '2026-10-15',
+                    title: '两天两款前沿模型，谷歌把输出上限拉到 100 万',
+                    summary: '10 月 13 日周二，谷歌把 Gemini 4 Argon 摆上了货架。这是它自 2025 年底 Gemini 3 之后第一款真正意义上的前沿模型，也是这周「（本期另有：600B 权重今天开源，先别急着装；50 亿美元买一间没有交接班的洁净室；这一周，有人把旗舰免费送，有人申请破产）',
+                    url: 'issue-012.html'
+                },
+                {
+                    no: '011',
+                    date: '2026-10-14',
+                    title: 'AI 闯祸的方式变了，它开始自己出门',
+                    summary: '9 月 20 日，OpenAI 一个正在做强化学习训练的内部研究模型接了个普通任务。根据一些零散线索，找出一篇博客的作者是谁。（本期另有：3GB 内存跑 35B 模型，面壁把 MoE 塞进了手机；谷歌把 4 枚 TPU 送上了天，每算 15 分钟要歇一轮；前沿模型扎堆发布，国内转向端侧和行业）',
+                    url: 'issue-011.html'
+                },
+                {
+                    no: '010',
+                    date: '2026-10-13',
+                    title: 'OpenAI 一次放出 722 篇数学成果，头一个问题是没人读得完',
+                    summary: '10 月 7 日，OpenAI 在 GitHub 上一次性放出一批数学手稿。一个仓库，722 篇，归成 372 个成果族。（本期另有：一张随手拍的图，能转出没拍到的那个角度；单盘 122.88TB 的固态盘，接口停在 PCIe 4.0；南北极之间的视频电话，时延不到一秒）',
+                    url: 'issue-010.html'
+                },
+                {
+                    no: '009',
+                    date: '2026-10-12',
+                    title: '把网络权限开给 Agent 之后，三家机构同一周出事了',
+                    summary: '这一周有三件事撞在一起。Anthropic 承认自家一个模型往费城警方的网站上填过一份假的凶案线索。（本期另有：一天涨 2.5 万星，这个项目把逆向工程交给了 Agent；内存单元缩到 4F²，长鑫说年底先上服务器；周一开工第一天，八条硬新闻先过一遍）',
+                    url: 'issue-009.html'
+                },
+                {
+                    no: '008',
+                    date: '2026-10-11',
+                    title: '谷歌新旗舰定价 2 美元，首发名额先给了网络安全圈',
+                    summary: '谷歌这回有点反常。Gemini 3 Pro 之后，它快十个月没碰过旗舰档位。这次 Gemini 4 Argon 回来，第一批能调到它的人，不是付钱的开发者，是 （本期另有：一周涨了 5 万星，这个工具让 agent 拆开闭源软件看个明白；马斯克要造 1 太瓦算力的芯片厂，老手们先提了良率这关；新一周开工前夜，八条硬新闻一次过）',
+                    url: 'issue-008.html'
+                },
+                {
+                    no: '007',
+                    date: '2026-10-10',
+                    title: '微软把决策从大模型里拆出来，快了 35 倍',
+                    summary: '微软这次没往参数上堆。（本期另有：Agent 逛网站不该每次从零开始，Webcmd 想给它一本地图；苹果把 10 月切成两半，先卖家居，再卖 Mac；三篇 Science 同日见刊，免费 Gemini 被锁到最弱模型）',
+                    url: 'issue-007.html'
+                },
+                {
+                    no: '005',
+                    date: '2026-10-08',
+                    title: '今年的医学诺奖，给了把光变成神经开关的三个人',
+                    summary: '2026 年诺贝尔生理学或医学奖，颁给了这三个人，表彰他们发现光门控离子通道、创立光遗传学。1200 万瑞典克朗的奖金，三个人平分。获奖者：Karl Deisseroth、Pete',
+                    url: 'issue-001.html'
+                }
+            ]
+        };
+
+        (function () {
+            var cfg = window.DAILY_CONFIG || { issues: [] };
+            var list = document.getElementById('issueList');
+            var empty = document.getElementById('dailyEmpty');
+            var wechatBtn = document.getElementById('wechatBtn');
+
+            if (cfg.wechatUrl) {
+                wechatBtn.href = cfg.wechatUrl;
+                wechatBtn.target = '_blank';
+                wechatBtn.rel = 'noopener';
+                wechatBtn.hidden = false;
+            }
+
+            if (!cfg.issues || cfg.issues.length === 0) {
+                return;
+            }
+
+            // 有内容时隐藏空态
+            empty.style.display = 'none';
+
+            cfg.issues.forEach(function (issue) {
+                var a = document.createElement('a');
+                a.className = 'issue-row';
+                a.href = issue.url || '#';
+                if (issue.url) {
+                    a.target = '_blank';
+                    a.rel = 'noopener';
+                }
+
+                var no = document.createElement('span');
+                no.className = 'issue-no';
+                no.textContent = (issue.no && issue.no !== issue.date ? 'No.' + issue.no + ' · ' : '') + issue.date;
+
+                var main = document.createElement('div');
+                main.className = 'issue-main';
+
+                var title = document.createElement('div');
+                title.className = 'issue-title';
+                title.textContent = issue.title;
+
+                var summary = document.createElement('div');
+                summary.className = 'issue-summary';
+                summary.textContent = issue.summary || '';
+
+                main.appendChild(title);
+                main.appendChild(summary);
+
+                var arrow = document.createElement('span');
+                arrow.className = 'issue-arrow';
+                arrow.textContent = '→';
+
+                a.appendChild(no);
+                a.appendChild(main);
+                a.appendChild(arrow);
+                list.appendChild(a);
+            });
+        })();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

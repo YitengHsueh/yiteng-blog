@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌新旗舰定价 2 美元，首发名额先给了网络安全圈 | 科技日报</title>
+    <meta name="description" content="谷歌这回有点反常。Gemini 3 Pro 之后，它快十个月没碰过旗舰档位。这次 Gemini 4 Argon 回来，第一批能调到它的人，不是付钱的开发者，是 （本期另有：一周涨了 5 万星，这个工具让 agent 拆开闭源软件看个明白；马斯克要造 1 太瓦算力的芯片厂，老手们先提了良率这关；新一周开工前夜，八条硬新闻一次过）">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="谷歌新旗舰定价 2 美元，首发名额先给了网络安全圈 | 科技日报">
+    <meta property="og:description" content="谷歌这回有点反常。Gemini 3 Pro 之后，它快十个月没碰过旗舰档位。这次 Gemini 4 Argon 回来，第一批能调到它的人，不是付钱的开发者，是 （本期另有：一周涨了 5 万星，这个工具让 agent 拆开闭源软件看个明白；马斯克要造 1 太瓦算力的芯片厂，老手们先提了良率这关；新一周开工前夜，八条硬新闻一次过）">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ytxue.netlify.app/issue-008-1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span class="issue-badge">小泰腾的科技日报 · 第 008 期</span>
+            <h1 class="article-title">谷歌新旗舰定价 2 美元，首发名额先给了网络安全圈</h1>
+            <div class="article-meta">
+                <span class="article-date">2026-10-11 Sun</span>
+                <span class="article-read-time">4 篇 · 约 8 分钟</span>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-content">
+        <div class="container">
+            <div class="article-body">
+                <h2 id="part-01"><span class="section-no">01</span>谷歌新旗舰定价 2 美元，首发名额先给了网络安全圈</h2>
+                <div class="keypoints">
+                    <ul>
+                        <li>Gemini 4 Argon 试用价 2 美元输入、10 美元输出，缓存读 0.1 美元</li>
+                        <li>单次输出上限 100 万 token，量产模型里目前没有第二家</li>
+                        <li>首批用户是 Fairwind 计划里的安全研究员，不是普通开发者</li>
+                        <li>试用结束后输入 4 美元、输出 20 美元，谷歌没给截止日</li>
+                    </ul>
+                </div>
+                <blockquote>9 月 30 日官宣，10 月 10 日还挂在预览档，公众 API 目录里查不到它的路由。</blockquote>
+                <p class="lede">谷歌这回有点反常。Gemini 3 Pro 之后，它快十个月没碰过旗舰档位。这次 Gemini 4 Argon 回来，第一批能调到它的人，不是付钱的开发者，是 Fairwind 计划里那批安全研究员和开源基础设施维护者。</p>
+                <p class="lede">为什么是这个顺序？往下看。</p>
+                <p>先把价格摆出来。试用期内，每百万 token 输入 2 美元，输出 10 美元，缓存输入打到 0.1 美元，等于标价的 5%。试用一过，输入 4 美元、输出 20 美元。谷歌没说试用期哪天结束，也没公布过渡安排。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-11-01-pricing.webp" alt="Gemini 4 Argon 的试用价与标准价对照" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">Gemini 4 Argon 的试用价与标准价对照</figcaption>
+                </figure>
+                <p>这个价位不是随便定的。GPT-6.1 Sol 上月底发布，也是 2 美元和 10 美元，缓存 0.1 美元。两大厂在同一个价位上碰了面。跟旗舰 Astra 的 10 美元和 50 美元一比，这个档位就是今年秋天的主战场。</p>
+                <p>把同档位的几个主要玩家摆一起看：</p>
+                <p>| 模型 | 输入 / 1M | 输出 / 1M | 缓存读 / 1M || --- | --- | --- | --- || Gemini 4 Argon（试用价） | $2 | $10 | $0.10 || GPT-6.1 Sol | $2 | $10 | $0.10 || Claude Sonnet 5.5 | $2 | $10 | $0.10 || Gemini 4 Argon（标准价） | $4 | $20 | 未公布 || GPT-6 Astra（旗舰） | $10 | $50 | $1.00 |</p>
+                <p>三大家在同一个点上扎堆，竞争把旗舰档的标价钉死在了这里。对调用方来说，谈判空间从来没这么大过。</p>
+                <p>说真的，更值得盯的是那条输出上限。100 万 token 的单次输出，你现在找不到第二家量产模型敢标这个数。你想想看，一次调用吐出一整个代码库迁移，或者一份几百页的合规报告，这类活以前得拆成几十轮对话喂，中间每次断点都要重新对齐上下文。</p>
+                <p>注意一点，输出是按 token 计费的，思考过程也算输出 token。真跑满 100 万，一次调用就是 10 美元，标准价下 20 美元。接进自动化循环里不做上限控制，账单会很直观。接它的正确姿势是显式设 max\_output\_tokens 和推理预算，别裸跑。</p>
+                <p>性能这边，第三方口径大致齐了。文本竞技场 1525 分排在第一，Vals 指数 68.9%，长链路软件工程基准 DeepSWE v1.1 拿了 77.9%，Artificial Analysis 智能指数 53，跟 GPT-6 Astra 打平。网络安全专项基准上与 GPT-6 Astra、Grok 4.7 并列，Vals 指数上排在这两者前面。</p>
+                <p>幻觉率 15%，Artificial Analysis 的口径。这个数不算低。长输出加中等幻觉率，两个数字放一起，你就知道为什么谷歌不敢直接全量放开。</p>
+                <p>讲道理，发布路径比定价更有信息量。</p>
+                <p>谷歌把间接提示注入的对抗训练写进了 Argon 的卖点，在 Gray Swan 的注入基准上刷出自家最好成绩。逻辑是这样的，模型能自主挖漏洞，这类能力放出去之前，得先有人把补丁工具备齐。</p>
+                <p>所以 Fairwind 先行。安全团队先拿它审计关键基础设施，顺便给护栏喂真实遥测数据。第二阶段才轮到付费 API 和 Vertex AI 企业客户，最后是 Ultra 订阅用户和全量开放。三步走，每一步都踩在安全评估的节点上。</p>
+                <p>两家的打法对照着看挺有意思。OpenAI 拿 GPT-6.1 Sol 全量上线，API 当天就能调。谷歌把旗舰锁进保险箱，钥匙先交给防守方。同一个价位，两条路线，一个赌速度，一个赌安全叙事。</p>
+                <p>其实吧，能力越强的模型，发布时的仪式感反而越重，这个行当对风险的定价在变。</p>
+                <p>缓存是这个价位里最容易被忽略的一笔账。对着固定代码库或文档库反复提问的场景，输入大都是重复的，95% 折扣的缓存读 0.1 美元，等于把这类任务的实际成本压到了标价的零头。谁的任务越像「反复读同一堆材料」，谁在这个价位上占的便宜越大。</p>
+                <p>落到用的人身上，现在能做什么？生产管线先别押它，公开路由上线之前，任何迁移都是空谈。等开放之后，先拿缓存重的大场景试，比如对着固定代码库反复提问的审计类任务，缓存读 0.1 美元的价格优势在这种场景里才吃得满。</p>
+                <p>反过来说，如果你的活是高频短输出，路由、分类这类轻判断，Argon 不是给你的，专用决策模型那个方向今天另有热闹，下期细说。</p>
+                <p>反正，先把管线准备好等开放就行。==开放之前，标价再低也只是个数字。==</p>
+                <p>模型能力可以慢慢等。价格战今天已经打完了，发布方式的分化才刚开始。</p>
+                <p>---</p>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>AIBriefs — AI News Today（2026-10-10） · <a href="https://aibriefs.news/ai-news-today" target="_blank" rel="noopener">aibriefs.news</a></li>
+                    <li>Tech Insider — GPT-6.1 Sol vs Gemini 4 Argon: 1M-Token Gap（2026-10-10） · <a href="https://tech-insider.org/gpt-6-1-sol-vs-gemini-4-argon-2026/" target="_blank" rel="noopener">tech-insider.org</a></li>
+                    <li>GadgetsFocus — Gemini 4 Argon Explained: 1M Output Tokens, Benchmarks, Pricing（2026-10-10） · <a href="https://gadgetsfocus.com/gemini-4-argon-complete-guide-specs-benchmarks-comparison-2026" target="_blank" rel="noopener">gadgetsfocus.com</a></li>
+                    <li>AI Agent Store — Gemini 4 Argon 模型页（2026-10-10） · <a href="https://aiagentstore.ai/ai-models/gemini-4-argon" target="_blank" rel="noopener">aiagentstore.ai</a></li>
+                    <li>AI Pricing Guru — Google AI Pricing, October 2026（2026-10-10） · <a href="https://www.aipricing.guru/google-ai-pricing/" target="_blank" rel="noopener">aipricing.guru</a></li>
+                </ol>
+
+                <h2 id="part-02"><span class="section-no">02</span>一周涨了 5 万星，这个工具让 agent 拆开闭源软件看个明白</h2>
+                <div class="keypoints">
+                    <ul>
+                        <li>morluto/rea，MIT 协议，10 月 10 日单日涨 12409 星</li>
+                        <li>原生二进制、Electron、.NET、JavaScript、安卓应用都能拆</li>
+                        <li>每条结论带证据和局限说明，这是它跟同类最大的区别</li>
+                    </ul>
+                </div>
+                <p>GitHub 这周的头号项目，不是又一个 agent 框架，是个让 agent 学会「自己去看」的工具。</p>
+                <blockquote>10 月 10 日单日 +12409 星，连续四天挂在趋势榜，总星数冲到 5 万以上。</blockquote>
+                <p>它叫 rea，作者 morluto，4 月建仓，MIT 协议。一句话讲清它做的事，把你没有源码的软件交给 coding agent，它反编译、跑起来、还原出一段能读的实现逻辑，每个结论后面跟着证据。</p>
+                <h3>它能拆什么？</h3>
+                <p>原生二进制走 Ghidra、Hopper 或 IDA，Electron 应用、JavaScript、.NET 程序集、安卓包各有各的通道。官方支持 macOS 12+ 和主流 Linux，Windows 下的原生分析还标着实验性，别指望开箱即用。</p>
+                <p>开源中国举了两个例子。</p>
+                <p>一个是把一个老游戏的音频声像算法整个还原出来，agent 拿着反编译结果把声像计算的分支重写了一遍，行为对得上原版。</p>
+                <p>另一个是 Windows 计算器那个经典谜题，200 + 10% 为什么等于 220？rea 启动 calc.exe，反编译出 % 按钮的处理分支，挖出了隐藏规则。加号后面，10% 按第一个数的百分比算，200 加 20 等于 220。乘号后面，10% 直接当 0.1 去乘。agent 把这套分支逻辑还原出来，还顺手写了个两种情况都处理正确的小计算器。</p>
+                <h3>为什么偏偏是现在火？</h3>
+                <p>你想想看，agent 干活最大的障碍之一，是它对闭源世界是瞎的。依赖装了个闭源 SDK，行为不对，它只能靠猜。想参考某个桌面软件的设计，没源码，只能看截图猜实现。安全团队想确认一个二进制里有没有可疑行为，传统逆向工具的门槛又高。</p>
+                <p>rea 把「自己去看」变成 agent 的一项本地能力，靠的是反汇编和运行证据，不是训练数据里的记忆。说真的，这类需求一直在，只是没有顺手的通道，现在有人把管线铺好了。</p>
+                <h3>怎么跑起来？</h3>
+                <p>装法走 npm，示意流程如下（不是真实 API，装前以仓库 README 为准）。</p>
+                <p>```bash</p>
+                <p># 示意流程，非真实 APInpm install -g rea-agents</p>
+                <p># 在你的 coding agent 里挂上 rearea connect --agent claude-code</p>
+                <p># 把目标应用指给它rea inspect /Applications/SomeApp.app```</p>
+                <p>跑起来的关键在于它不替你下结论。工具把反编译结果和运行时证据交给 agent，由 agent 组织成人话，每条结论都标着出处和局限。官网 FAQ 把可解释性写成了产品特性，而不是事后补丁。在一个 agent 越来越敢拍脑袋给答案的年代，盲猜的逆向结论比没有结论更危险。</p>
+                <h3>坑在哪？</h3>
+                <p>注意一点，隐私边界要先想清楚。分析在本地跑，但反编译结果会交给你的 agent，后半段归模型厂商的数据政策管。拆公司采购的闭源软件之前，许可协议里关于逆向工程的条款得先翻一遍，麻烦在于这条红线各国宽严不一，没人能替你拍板。</p>
+                <p>另一个坑是预期管理。GhidraMCP 只包了 Ghidra 一家，2025 年 6 月之后没发过版本，rea 的覆盖面宽得多。但拆原生二进制的质量仍取决于底下挂的反编译器，IDA 的授权费用不便宜，Ghidra 免费但上手门槛高。其实吧，工具不改变逆向本身的难度，它只是把门槛从「得会逆向」降到了「得会提问」。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-11-02-stars.webp" alt="rea 的单日涨星曲线，两天翻了三倍" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">rea 的单日涨星曲线，两天翻了三倍</figcaption>
+                </figure>
+                <div class="md-note">我还没上手跑，以上口径来自仓库 README、开源中国的实测叙述和趋势榜数据。跑完出结果我再写一篇。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>开源中国 — 5 万 star 的 REA，把逆向工程变成 agent 的一项本地能力（2026-10-10） · <a href="https://www.oschina.net/news/502941" target="_blank" rel="noopener">oschina.net</a></li>
+                    <li>GhTrends.dev — GitHub Trending Daily（2026-10-10） · <a href="https://ghtrends.dev/daily" target="_blank" rel="noopener">ghtrends.dev</a></li>
+                    <li>GenAI Secret Sauce — Weekly Digest, October 3 to 9, 2026（2026-10-09） · <a href="https://genaisecretsauce.com/genai-secret-sauce-weekly-digest-week-of-october-3-to-october-9-2026" target="_blank" rel="noopener">genaisecretsauce.com</a></li>
+                    <li>Capital &amp; Compute — What Is REA? Reverse Engineer Apps With AI Agents（2026-10-10） · <a href="https://capitalandcompute.net/blog/what-is-rea-reverse-engineer-anything" target="_blank" rel="noopener">capitalandcompute.net</a></li>
+                    <li>GitHub — morluto/rea 仓库主页 · <a href="https://github.com/morluto/rea" target="_blank" rel="noopener">github.com</a></li>
+                </ol>
+
+                <h2 id="part-03"><span class="section-no">03</span>马斯克要造 1 太瓦算力的芯片厂，老手们先提了良率这关</h2>
+                <div class="stat-row">
+                    <div class="stat-card">
+                        <div class="stat-value">1 TW</div>
+                        <div class="stat-label">Terafab 的目标算力，约为现有全球 AI 芯片产能的 50 倍</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">168 亿美元</div>
+                        <div class="stat-label">一期投资，多阶段扩建上限 1190 亿美元</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">14A</div>
+                        <div class="stat-label">项目押注的英特尔下一代工艺，2028 年量产</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">30 年</div>
+                        <div class="stat-label">三星高管给「调出稳定良率」开出的时间</div>
+                    </div>
+                </div>
+                <p>10 月 10 日，韩国媒体的采访把 Terafab 又推到了台前。多位业内受访者的口径很一致，建厂容易，良率难。</p>
+                <p>难到什么程度？一位三星高管的说法是，把设备调到满足量产良率、并长期保持工艺步骤的最佳组合，至少需要 30 年。另一位在这行干了很多年的业内人也认同，把星舰送上火星，可能都比让 Terafab 稳定拉出良率容易。</p>
+                <h3>这是个多大的盘子</h3>
+                <p>Terafab 是特斯拉和 SpaceX 合资的芯片制造项目，3 月 21 日正式公布，选址得州格莱姆斯县。项目文件给出的多阶段扩建潜在上限是 1190 亿美元，至少雇 3000 人，还拿了得州企业基金 3000 万美元补贴，条件是 2030 年前在当地至少投 50 亿美元。项目用水取自附近水库，不跟农业抢地下水。</p>
+                <p>目标年产 1 TW 以上算力，按马斯克的说法，约八成部署到太空，两成留给地面的自动驾驶和机器人。八成上太空这个比例，跟他一直在讲的轨道数据中心是同一张蓝图。</p>
+                <p>说真的，节奏排得很激进。大规模施工放在 12 月，一期目标 2028 年底完成。新厂从动工到量产普遍要按年计，这个时间表先打个问号。</p>
+                <h3>良率这道坎</h3>
+                <p>韩华证券分析师朴俊英的观点相对温和。他认可项目的意义，说它的价值在于为航天、自动驾驶和机器人建立一条端到端的芯片供应链，英特尔的生产经验能帮特斯拉和 SpaceX 省去从零摸索的时间，不用把头几年全花在重新发明生产体系上。</p>
+                <p>三星那位高管就没这么客气了。几百道工序、几千个参数要同时最优，某道工序偏差几秒，良率就受影响。三星自己都在良率上反复吃苦头，这话从他们嘴里说出来，分量不轻。</p>
+                <p>芯片制造的门槛为什么这么高？设备能买，厂房能盖，工程师的手感只能靠时间腌出来。每一代工艺都在缩小电路尺寸，缺陷的容忍窗口越缩越窄，良率是熬出来的，不是买回来的。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-11-03-yield.webp" alt="Terafab 的关键时间点，两头都压在 2028" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">Terafab 的关键时间点，两头都压在 2028</figcaption>
+                </figure>
+                <p>其实吧，星舰和良率这个对比是整篇报道里最值钱的一句。火箭的问题在物理，能算能仿真，炸了能定位。良率的问题在系统，几百道工序互相耦合，出了问题经常只能靠试。工程可以加速，系统只能熬。</p>
+                <h3>时间表上的错位</h3>
+                <p>英特尔 7 月把 14A 的风险试产排到 2027 下半年，大量产排到 2028，0.9 版工艺设计套件这个月发给外部客户。而 Terafab 一期也要在 2028 年底完成。等于说，项目的完工时间和工艺的成熟时间压在同一年，两头都没有余量。麻烦在于，良率爬坡本身就要以年计。</p>
+                <p>注意一点，马斯克在财报电话会上也承认 14A 尚未完全定型，赌的是等项目规模化时它已经成熟。这个赌注的期限，就是 2028。</p>
+                <p>别只看 1 TW 的愿景。2028 年之前，特斯拉自家的先进芯片还得靠外面的产线。这条新闻对供应链的真实影响，要等 12 月动工之后看执行，不看发布会。</p>
+                <div class="md-note">本文不构成任何投资建议。产能与时间表均为公开报道口径（2026-10-10），不涉及任何具体晶圆代工厂，后续进展以官方披露为准。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>IT之家 — 相关人士谈马斯克想通过 Terafab 自产芯片，可能比送星舰上火星还难（2026-10-10） · <a href="https://news.qq.com/rain/a/20261010A039Z200" target="_blank" rel="noopener">news.qq.com</a></li>
+                    <li>财联社 — 芯片专家试图劝退马斯克，Terafab 芯片项目可比发射星舰火箭更难（2026-10-10） · <a href="https://www.163.com/dy/article/L8T82IJV05198CJN.html" target="_blank" rel="noopener">163.com</a></li>
+                    <li>腾讯新闻 — 分析师不看好马斯克的晶圆厂（2026-10-10） · <a href="https://news.qq.com/rain/a/20261010A038NT00" target="_blank" rel="noopener">news.qq.com</a></li>
+                    <li>深圳市电子商会 — 马斯克 Terafab 工厂遭唱衰，内部人士称稳定良率比把星舰送上火星更难（2026-10-10） · <a href="https://www.seccw.com/Document/detail/id/51025.html" target="_blank" rel="noopener">seccw.com</a></li>
+                    <li>今日头条 — 泼了一盆冷水，马斯克造芯片可能比送星舰上火星还难（2026-10-10） · <a href="https://www.toutiao.com/w/1878632237246472/" target="_blank" rel="noopener">toutiao.com</a></li>
+                </ol>
+
+                <h2 id="part-04"><span class="section-no">04</span>新一周开工前夜，八条硬新闻一次过</h2>
+                <p>假期最后一天，科技圈没歇着。模型、芯片、工具各有一条线在动。这周谁在悄悄发力？挑了八条值得扫一眼的，国内三、海外五，一条一个点，快慢自己挑。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-11-04-map.webp" alt="今天的信息版图" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">今天的信息版图</figcaption>
+                </figure>
+                <h4>国内 · 英特尔车规芯片装进了 11 万级轿车</h4>
+                <p>10 月 9 日深蓝 L06 上市，限时权益价 11.49 万元起，首发搭载车规版英特尔酷睿 Ultra，本地跑大模型，断网也能毫秒级响应，离线哨兵监控和风险预判都跑在车端。</p>
+                <p>其实吧，座舱芯片这一家独大的格局，被撬开了一条缝。同场还把磁流变悬架下放到了 11 万级，这个配置以前只在百万级超跑上见。</p>
+                <h4>国内 · Qwen 图像模型出 8 步加速版</h4>
+                <p>阿里通义开源 Qwen-Image-2.1-Turbo，去噪步数从默认 40 步压到 8 步，支持 2K 出图和透明图层编辑。同一架构省 5 倍步数，推理成本跟着往下走。批量出图的场景，这笔账很划算。</p>
+                <h4>国内 · 汕头率先推出「词元出海贷」</h4>
+                <p>广东汕头在全国率先推出面向词元（Token）服务的出海信贷产品，给智算企业出海搭融资通道。政策跟业务贴得挺紧，先记着这条线，后面大概率有城市跟进。</p>
+                <h4>海外 · GPT-6 带着智能界面全量推送</h4>
+                <p>10 月 10 日起 GPT-6 铺向 Plus、Pro 和企业版用户，付费档跑 GPT-6 Sol，免费和 Go 档次日跟上。回复里能混排图表、按钮和表单，还能内嵌小游戏和预算计算器这类小工具。注意一点，这才是它跟上一代最大的差别，对话正在变成界面。</p>
+                <h4>海外 · Claude Haiku 5.5 把小模型价格再砍一刀</h4>
+                <p>输入 0.1 美元、输出 0.5 美元每百万 token，比上一代平均省 75%。能力没缩水，OSWorld 2.1 离线子集得分 72.4%，上一代只有 15.7%，还首次带上了 effort 档位，按任务花心思。摘要、压缩、子智能体这类高并发活，性价比又高了一截。</p>
+                <h4>海外 · Mistral 放出 1T 参数预览版</h4>
+                <p>Mistral Large 4 原生多模态，总参数 1T，激活只有 49B，在欧洲的数据中心里用 3800 块 Grace Blackwell 训完。API 已上线，权重月底开源。你算一下，激活比不到 5%，这个稀疏比相当激进，Agent Arena 排名一周升了 11 位。</p>
+                <h4>海外 · 腾讯租下 10 万颗 AI 芯片</h4>
+                <p>Tom's Hardware 报道，腾讯与 Oracle 达成 5 年 70 亿美元的芯片租赁协议，估算时租比一年期 H100 标准租价低 43%。芯片型号没公布，规模指向 Hopper 级。这笔账双方都没细说，反正价格是真低。</p>
+                <h4>海外 · Cloudflare 收购 Deno</h4>
+                <p>Deno 并入 Cloudflare，运行时还有一年维护期，Deno Deploy 六个月后关停，JSR 包仓库继续运营。Ryan Dahl 说他不觉得 Deno 还是自己能做最重要工作的地方。别只看收购金额，这是 JS 运行时格局的一次收缩，Node 之外的那条路并进了大厂的基础设施。</p>
+                <p>---</p>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>封面新闻 — 英特尔芯片，悄悄上车了（2026-10-10） · <a href="https://www.toutiao.com/article/7694819932214755883" target="_blank" rel="noopener">toutiao.com</a></li>
+                    <li>AITOP 每日热报 — 2026-10-10 早读（2026-10-10） · <a href="https://aitop.news/daily" target="_blank" rel="noopener">aitop.news</a></li>
+                    <li>极新早报 — Odyssey-3 发布等十条要闻（2026-10-10） · <a href="https://www.163.com/dy/article/L8S6FR8I05562DGT.html" target="_blank" rel="noopener">163.com</a></li>
+                    <li>AIBriefs — AI News Today（2026-10-10） · <a href="https://aibriefs.news/ai-news-today" target="_blank" rel="noopener">aibriefs.news</a></li>
+                    <li>AI Agents Weekly — Claude Haiku 5.5, Gemini Agent, Mistral Large 4 等（2026-10-10） · <a href="https://wpnews.pro/news/ai-agents-weekly-claude-haiku-5-5-gemini-agent-mistral-large-4-decisions-api-and" target="_blank" rel="noopener">wpnews.pro</a></li>
+                    <li>Tom's Hardware — Tencent grabs bargain chips, Qualcomm Huawei IP deal（2026-10-10） · <a href="https://www.tomshardware.com/tech-industry/this-week-on-toms-hardware-premium-october-10-2026-tencent-grabs-bargain-chips-qualcomm-huawei-ip-deal-groq-lawsuit-and-more" target="_blank" rel="noopener">tomshardware.com</a></li>
+                    <li>GenAI Secret Sauce — Weekly Digest, October 3 to 9, 2026（2026-10-09） · <a href="https://genaisecretsauce.com/genai-secret-sauce-weekly-digest-week-of-october-3-to-october-9-2026" target="_blank" rel="noopener">genaisecretsauce.com</a></li>
+                </ol>
+
+                <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="daily.html" target="_blank" rel="noopener">daily.html</a></p>
+            </div>
+
+            <div class="article-nav">
+                <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>
+            </div>
+
+            <div class="share-bar">
+                <span class="share-label">分享这篇</span>
+                <button class="share-btn" type="button" data-share="copy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                    复制链接
+                </button>
+                <button class="share-btn" type="button" data-share="native" id="shareNative" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                    系统分享
+                </button>
+                <a class="share-btn" id="shareWeibo" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5 2 5.5 2 7 0"/><circle cx="9" cy="10" r="0.6" fill="currentColor"/><circle cx="15" cy="10" r="0.6" fill="currentColor"/></svg>
+                    微博
+                </a>
+            </div>
+
+            <section class="comments">
+                <h3 class="comments-title">留言</h3>
+                <div class="comments-hint">
+                    评论功能正在接入中，暂时可以通过 <a href="mailto:yitenghsueh@gmail.com">邮件</a> 或 Instagram 找我聊天。
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

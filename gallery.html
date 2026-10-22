@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品集 | 我的个人博客</title>
+    <meta name="description" content="Yiteng 的摄影作品集：用一台富士 X-T30 III 记录的城市夜景、山海与日常切片。">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="摄影作品集 | 我的个人博客">
+    <meta property="og:description" content="用一台富士 X-T30 III 记录的城市夜景、山海与日常切片。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ytxue.netlify.app/3.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html" class="active">作品集</a></li>
+                <li><a href="daily.html">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <span class="page-eyebrow">PHOTOGRAPHY</span>
+        <h1 class="page-title">光与影的切片</h1>
+        <p class="page-subtitle">20 张照片，从东京的夜、富士山的樱花，到落基山的雪。点击任意照片可以放大查看。</p>
+    </header>
+
+    <!-- 作品集 -->
+    <section class="gallery-section">
+        <div class="masonry">
+            <figure class="photo-card">
+                <img src="1.webp" alt="东京夜景，从高处俯瞰城市灯火" loading="lazy" decoding="async">
+                <figcaption>01 — 东京，夜</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="2.webp" alt="富士山下的便利店" loading="lazy" decoding="async">
+                <figcaption>02 — 便利店与富士山</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="3.webp" alt="樱花与富士山" loading="lazy" decoding="async">
+                <figcaption>03 — 樱花季的富士</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="4.webp" alt="随身携带的富士 X-T30 III 相机" loading="lazy" decoding="async">
+                <figcaption>04 — 随身的那台相机</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="5.webp" alt="曼谷 BTS 天桥下的街景" loading="lazy" decoding="async">
+                <figcaption>05 — 曼谷，天桥下</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="6.webp" alt="开满黄色小花的山脊与积云" loading="lazy" decoding="async">
+                <figcaption>06 — 山脊与积云</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="7.webp" alt="坐在海边的木桌旁，面向礁石与海面" loading="lazy" decoding="async">
+                <figcaption>07 — 面向海的一下午</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="8.webp" alt="露易丝湖，绿松石色湖面上的独木舟与雪山" loading="lazy" decoding="async">
+                <figcaption>08 — 露易丝湖，独木舟</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="9.webp" alt="露易丝湖全景，雪山与秋色灌木" loading="lazy" decoding="async">
+                <figcaption>09 — 冰川下的绿松石</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="10.webp" alt="露易丝湖竖构图，湖面与雪线" loading="lazy" decoding="async">
+                <figcaption>10 — 湖面与雪线</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="11.webp" alt="露易丝湖另一角度，远处的独木舟" loading="lazy" decoding="async">
+                <figcaption>11 — 同一片湖，另一种构图</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="12.webp" alt="独木舟划过露易丝湖湖心" loading="lazy" decoding="async">
+                <figcaption>12 — 划过湖心</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="13.webp" alt="灰蓝色湖面与层叠的山体" loading="lazy" decoding="async">
+                <figcaption>13 — 另一个湖，另一种蓝</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="14.webp" alt="风吹过湖面，云影落在山上" loading="lazy" decoding="async">
+                <figcaption>14 — 云影落在水上</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="15.webp" alt="山谷与湖面的广角全景" loading="lazy" decoding="async">
+                <figcaption>15 — 山谷全景</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="16.webp" alt="落日时分的落基山雪脊" loading="lazy" decoding="async">
+                <figcaption>16 — 落基山的黄昏</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="17.webp" alt="红叶树下推着山地车的人" loading="lazy" decoding="async">
+                <figcaption>17 — 红叶下的单车</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="18.webp" alt="温哥华狮门桥与海面" loading="lazy" decoding="async">
+                <figcaption>18 — 温哥华，狮门桥</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="19.webp" alt="亚利桑那州马蹄湾" loading="lazy" decoding="async">
+                <figcaption>19 — 马蹄湾</figcaption>
+            </figure>
+            <figure class="photo-card">
+                <img src="20.webp" alt="酒店走廊的镜面自拍" loading="lazy" decoding="async">
+                <figcaption>20 — 出发前，镜子里</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- 图片灯箱 -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
