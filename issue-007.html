@@ -30,6 +30,33 @@
             if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
         })();
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "微软把决策从大模型里拆出来，快了 35 倍",
+  "datePublished": "2026-10-10",
+  "dateModified": "2026-10-10",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "YITENG"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YITENG"
+  },
+  "image": "https://ytxue.netlify.app/2.jpeg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ytxue.netlify.app/issue-007.html"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "小泰腾的科技日报"
+  }
+}
+    </script>
 </head>
 <body>
     <div class="reading-progress" id="readingProgress"></div>
@@ -104,7 +131,7 @@
                 <p>你算一下这几个数。14 倍、100 倍、200 倍，出现在同一个模型的同一场宣传里，跨度大得有点不真实。</p>
                 <p>为什么会有这么大的差？原因不难猜。</p>
                 <p>这些对比的分母不一样，任务不一样，计费口径也不一样。决策模型的输出本来就短，输出 token 还免费，成本差距自然被放大。</p>
-                <p>==36 项基准、近 15 万道题准确率第一这个结论，是微软自己测出来的。== 第三方复现还没有。</p>
+                <p><mark>36 项基准、近 15 万道题准确率第一这个结论，是微软自己测出来的。</mark> 第三方复现还没有。</p>
                 <p>说真的，我现在的处理方式，是把 35 倍当成一个待验证的宣称。未必能直接换成你账单上的数字。</p>
                 <p>决策模型这个概念本身也不新。分类器、排序模型、规则引擎，这些东西在推荐和风控里跑了十几年。</p>
                 <p>真正变的地方是，它们现在能从大模型里蒸出来，用自然语言描述任务就行，不用再养一个算法团队去标数据。</p>
@@ -120,7 +147,7 @@
                 <p>OpenAI 10 月 6 日开了 Decisions API 的公开测试，跑 GPT-6 Luna，每百万输入 token 收 0.10 美元。</p>
                 <p>TypeSafe 的 Jev 在 9 月 17 日上了 Vercel AI Gateway，Liquid AI 的 d1 在 9 月 30 日跟进。</p>
                 <p>Perplexity 的 pplx-decider 系列更直接，输出的是概率分布，公开价每百万输入 0.04 美元。</p>
-                <p>再加上微软这次，加上 Unsloth 那批把它做成本地训练教程的人，==决策模型已经是一条有名字的赛道了。==</p>
+                <p>再加上微软这次，加上 Unsloth 那批把它做成本地训练教程的人，<mark>决策模型已经是一条有名字的赛道了。</mark></p>
                 <p>这几家的切入点有差别。OpenAI 和微软走平台路线，把决策能力挂进自己的云和 Foundry。</p>
                 <p>Jev 和 d1 更偏中间件，做的是模型路由那一层。Perplexity 干脆把决策做成 API，卖的就是概率分布这个输出形态。</p>
                 <p>各家抢的位置很像。都盯住了同一个事实，agent 跑起来之后，最贵的不再是生成，而是路上的每一次判断。</p>
@@ -134,7 +161,7 @@
                 <p>可演示里的那个数是 200 倍。</p>
                 <p>定价这么定，说明微软希望它被调得足够频繁。一个高频调用的模型，最怕的就是每一次调用都要算钱。</p>
                 <p>过去两年，这个行业的默认动作是往上堆。堆参数，堆上下文，堆推理步数。Decision-1 是朝反方向走的。</p>
-                <p>它承认了一件事，==不是所有问题都值得动用最大的那个模型。== 有些问题只需要一个又快又便宜、判断还准的家伙。</p>
+                <p>它承认了一件事，<mark>不是所有问题都值得动用最大的那个模型。</mark> 有些问题只需要一个又快又便宜、判断还准的家伙。</p>
                 <p>也得说清楚它不适合什么。需要解释、需要多轮追问、需要在模糊条件下反复权衡的任务，还是得交给大模型。决策模型的强项是快，不是想得深。</p>
                 <p>最后说一句判断。这条路线要成立，前提是把任务拆得足够清楚。拆不清楚，小模型就答不出那个定型的结果。</p>
                 <p>---</p>
@@ -162,7 +189,7 @@
                 <p>AgentR 给的解法很直白，让它记下来。</p>
                 <p>10 月 8 日，这家公司开源了 Webcmd，Apache 2.0，TypeScript 写的。它做的事一句话能讲完，把 agent 在一个网站上观察到的东西记成本地的一份地图，下次谁来，直接从地图出发。</p>
                 <p>记下来的东西比我预想的多。页面结构只是其中一项，还有状态、动作、工作流、接口、坑，以及走不通时的备选路径。</p>
-                <p>==它记的是「怎么在这个站上把事办成」，不是「这个站长什么样」。==</p>
+                <p class="pullquote">它记的是「怎么在这个站上把事办成」，不是「这个站长什么样」。</p>
                 <p>这份地图存在本地，不上云。对做企业内部流程的人来说，这一点比省 token 更要紧。</p>
                 <p>它还改了 agent 跟浏览器说话的方式。以前是一条命令一步，走一步看一眼。现在 agent 可以发一整段 Playwright 风格的 JavaScript 程序，把相关的几步串起来一次交出去。</p>
                 <p>注意一点，这种写法省的不只是 token。来回轮数少了，出错的地方也跟着少。</p>
@@ -178,7 +205,7 @@
                     <img src="fig-2026-10-10-02-cost.webp" alt="BU Bench V1 的单任务成本对比" class="chart-img" loading="lazy" decoding="async">
                     <figcaption class="img-note">BU Bench V1 的单任务成本对比</figcaption>
                 </figure>
-                <p>==这里有个必须说清楚的口径问题，整份对比是 AgentR 自己发布的。== 完整跑分和复现步骤放在 GitHub 上了，独立第三方验证还没有。</p>
+                <p><mark>这里有个必须说清楚的口径问题，整份对比是 AgentR 自己发布的。</mark> 完整跑分和复现步骤放在 GitHub 上了，独立第三方验证还没有。</p>
                 <p>仓库现在的数据是 2600 多星、1600 个 fork、9 位贡献者。8 月 22 日它上过一次 Trendshift 的 JavaScript 榜第一。</p>
                 <p>安装一行就够，Node.js 得 20.6 以上。</p>
                 <p>```bash</p>
@@ -263,7 +290,7 @@
                 <p>一个摆在厨房台面或走廊墙上的带屏设备，形态本身不新鲜。</p>
                 <p>亚马逊的 Echo Show 做了快十年，谷歌的 Nest Hub 也是老产品线。苹果迟迟没进来，卡的地方不在硬件，在 Siri。</p>
                 <p>这次敢上，前提是 AI 版 Siri 终于撑得起对话。人脸识别认出这是谁，推对应成员的日历和小组件，视频通话，跟着菜谱做菜。这些功能单看都很朴素。</p>
-                <p>==有意思的是定价逻辑。350 美元不便宜，苹果还鼓励你在家里多个房间各放一台。==</p>
+                <p class="pullquote">有意思的是定价逻辑。350 美元不便宜，苹果还鼓励你在家里多个房间各放一台。</p>
                 <p>问题是它凭什么让人买第二台？</p>
                 <p>音箱的思路是买一个放客厅。中枢要铺开，才有存在感。回到壁挂和底座两种形态上，答案就露出来了，苹果想让它出现在厨房、走廊、卧室这些原本放不下电脑的地方。</p>
                 <h3>第二场才是硬货</h3>
@@ -344,6 +371,11 @@
 
                 <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="daily.html" target="_blank" rel="noopener">daily.html</a></p>
             </div>
+
+            <nav class="issue-pager" aria-label="往期导航">
+                    <a href="issue-005.html">← 第 005 期</a>
+                    <a href="issue-008.html">第 008 期 →</a>
+                </nav>
 
             <div class="article-nav">
                 <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>

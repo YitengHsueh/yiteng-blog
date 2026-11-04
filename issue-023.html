@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 美元一次的攻破 | 科技日报</title>
+    <meta name="description" content="10 月 19 日，路透社报道了一件事。安全公司 NorForge 的威胁研究员 Snorre Fagerland 发现，公网上有一批忘了加登录的 Cairn （本期另有：59 片晶圆跑一个 3 万亿参数模型；词元均价涨到两倍，量的增长是 3 倍；86% 的人在用，15% 的人在用进去）">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="5 美元一次的攻破 | 科技日报">
+    <meta property="og:description" content="10 月 19 日，路透社报道了一件事。安全公司 NorForge 的威胁研究员 Snorre Fagerland 发现，公网上有一批忘了加登录的 Cairn （本期另有：59 片晶圆跑一个 3 万亿参数模型；词元均价涨到两倍，量的增长是 3 倍；86% 的人在用，15% 的人在用进去）">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ytxue.netlify.app/issue-023-1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "5 美元一次的攻破",
+  "datePublished": "2026-10-26",
+  "dateModified": "2026-10-26",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "YITENG"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YITENG"
+  },
+  "image": "https://ytxue.netlify.app/2.jpeg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ytxue.netlify.app/issue-023.html"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "小泰腾的科技日报"
+  }
+}
+    </script>
+</head>
+<body>
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span class="issue-badge">小泰腾的科技日报 · 第 023 期</span>
+            <h1 class="article-title">5 美元一次的攻破</h1>
+            <div class="article-meta">
+                <span class="article-date">2026-10-26 Mon</span>
+                <span class="article-read-time">4 篇 · 约 13 分钟</span>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-content">
+        <div class="container">
+            <div class="article-body">
+                <h2 id="part-01"><span class="section-no">01</span>5 美元一次的攻破</h2>
+                <p class="part-tags">AI,安全 | 国内外</p>
+                <p class="lede">10 月 19 日，路透社报道了一件事。安全公司 NorForge 的威胁研究员 Snorre Fagerland 发现，公网上有一批忘了加登录的 Cairn 面板。面板背后是犯罪分子，犯罪分子背后是干活的 AI 智能体。</p>
+                <p class="lede">这些智能体在数周里尝试入侵上千个网站，成功了一百多个。受害者里有农机巨头 Deere、家电厂商 SharkNinja、发动机制造商 Cummins。</p>
+                <p>先把名单放一边。真正该看的是价格。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-01-econ.webp" alt="一次得手的价钱" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">一次得手的价钱</figcaption>
+                </figure>
+                <blockquote>成功攻破一个网站，约 50 美元。整个行动的 AI 开销，约 5000 美元。而操作员写下的策略，不到 100 个汉字。</blockquote>
+                <div class="keypoints">
+                    <ul>
+                        <li>尝试入侵上千个网站，成功一百多个，涉及三家上市公司。</li>
+                        <li>成功一次约 50 美元，单个任务平均约 5 美元，成功率约 10%。</li>
+                        <li>操作员的策略指令不到 100 个汉字，几乎没动手。</li>
+                        <li>用的模型包括 Claude Code 加 DeepSeek V4.1 Flash，以及 Pi 加 DeepSeek 走 OpenRouter。</li>
+                        <li>工具箱是 Playwright、Nmap、ffuf、PHPGGC 和一个 Magento 漏洞 PoC，没有新东西。</li>
+                    </ul>
+                </div>
+                <h3>一、Cairn 是什么，50 美元怎么算</h3>
+                <p>Cairn 是一个开源的目标驱动智能体框架。</p>
+                <p>用法是这样。操作员给它一个目标，智能体把自己探到的东西贴到一块共享板上，然后从板上挑下一个动作。它不等人一步步指挥，自己决定下一步干什么。</p>
+                <p>NorForge 找到 20 多个判定为恶意的暴露面板，分成三个集群。最大的那个叫 AIA0001，用中文写任务，14 个面板，记录了 1100 多个针对美国、日本、澳大利亚商店的攻击项目。它的目标反复出现同一个，未经认证的远程代码执行，以上传 shell 到商户服务器收尾。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-01-scale.webp" alt="1100 个目标，100 多个得手" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">1100 个目标，100 多个得手</figcaption>
+                </figure>
+                <p>NorForge 对这个行动者的判断是，它似乎只盯着访问权限，确保自己以后还能做更多。抢完钱就跑不是它的风格，它要的是长期据点。</p>
+                <p>这笔账拆开算更清楚。</p>
+                <p>NorForge 估算，一个 Cairn 任务平均约 5 美元，算上了那些早早失败的项目。路透社引用 Fagerland 的数字，成功攻破一次约 50 美元。</p>
+                <p>两个数不矛盾。成功率大约 10%，5 美元买十次才换到一个 shell。整个行动下来，AI 开销约 5000 美元。</p>
+                <p>这买卖放在以前没人做得起，现在摊到每个人头上就这么点。</p>
+                <p>换个算法更直观。5000 美元，成功 100 多个，平均每个得手的目标花了不到 50 美元的算力。</p>
+                <p>时间账也要看。最大的集群里，成功的项目从开始到达成目标平均略少于 23 小时。一个智能体不眠不休跑一天，能拿下一个站。</p>
+                <p>100 个汉字，换来 100 多个据点。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-01-hours.webp" alt="100 个汉字，23 小时" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">100 个汉字，23 小时</figcaption>
+                </figure>
+                <h3>二、攻击没变，变的是稀缺的那一环</h3>
+                <p>工具拿出来看，一样都不新。Playwright、Nmap、ffuf、PHPGGC，加一个 Magento 漏洞的 PoC。全是公开工具，全是老漏洞。</p>
+                <p>技术一样没变。变的是谁在干活。</p>
+                <p>一次 Web 入侵过去卡在一种人手上。他得会读栈追踪，能把一串漏洞接起来，熬到第九个小时还不放弃。Cairn 把这种人去掉了。</p>
+                <p>于是稀缺的输入换了位置。现在缺的是目标列表。而这个操作员手里有 1100 条。</p>
+                <p>有个案例能说明智能体自己走到了哪一步。在一个很大的美国零售商那里，智能体自己琢磨出该用哪个 cookie 才能选中脆弱的后端服务器。这条链 NorForge 自己验证过。它没照人写的剧本走，路是自己摸出来的。</p>
+                <h3>三、跑这套东西的模型，是国产的</h3>
+                <p>细节里最刺眼的一处。</p>
+                <p>NorForge 从 worker 的名字还原了底层。一个集群的 worker 标着 claudecode_deepseek-v4.1-flash，NorForge 的理解是，用 Claude Code 的 harness 配 DeepSeek V4.1 Flash 模型。另一个集群用的是 Pi 编程智能体配 DeepSeek，走 OpenRouter。</p>
+                <p>harness 是美国的，模型是中国的。两边都不难拿到，凑在一起就是一套能自己入侵网站的东西。</p>
+                <p>那问题出在哪儿？</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-01-models.webp" alt="harness 与模型各一半" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">harness 与模型各一半</figcaption>
+                </figure>
+                <p>这跟上一期讲的「一边开源一边断网」接上了。开源把模型能力送到了所有人手里，包括不怀好意的人。断网能挡住训练时的模型，挡不住已经放出去的权重。</p>
+                <p>DeepSeek 和月之暗面都不是问题所在，它们没有为攻击提供任何支持。麻烦在于，一旦权重公开，使用者是谁就由不得发布者了。</p>
+                <h3>四、先说清不确定的部分</h3>
+                <p>路透社的原话，无法确定这些入侵在多大程度上导致了未授权的数据提取。技术上的得手，和真的拿走数据，是两件事。</p>
+                <p>三家公司各自的回应也不一样。Deere 说没有迹象表明敏感信息被访问。SharkNinja 说被击中的是一个独立的产品支持站点。Cummins 说在调查一份关于其第三方供应商运营网站的潜在攻击报告。</p>
+                <p>第三条最该留意。被打穿的往往不是自己，是供应商。</p>
+                <p>麻烦在于，NorForge 自己也没把 10% 当成精确测量。5 美元的成本同样有相当大的不确定性。</p>
+                <p>所以这条新闻现在立得住的部分是，一套便宜、自主、开箱即用的攻击流程已经跑起来了，而且有人在规模化地用。至于造成了多大损失，未必马上有数。</p>
+                <h3>五、这笔账的真正含义</h3>
+                <p>回到开头那笔账。</p>
+                <p>过去算一次入侵的成本，「人」是主要一项。人的时间贵，攻击就有了天然的上限。现在这个上限没了，剩下的成本是算力，而算力正在以 5 美元一次的价格零售。</p>
+                <p>Patrick McKenzie 在 2022 年写过一句话，最优的作恶量大于零。每家企业都会挑一个容忍度，在损失和流失的销售之间做交换。值得买的控制，是那些能打破规模化攻击经济性的。</p>
+                <p>McKenzie 那个框架放在这里正好用。多数企业的安全投入，是照着「攻击者成本很高」这个假设配的。假设变了，配置就得重算。</p>
+                <p>具体说，过去威胁模型里默认攻击者会挑高价值目标，因为时间成本摆在那儿。现在它能一天试一百个，低价值目标也不再安全。</p>
+                <p>防御侧的清单反而变简单了。打补丁、清资产、关掉不用的系统、上多因素、给托管账户加防护、看日志、留备份、管好第三方供应商的访问。</p>
+                <p>这些事没有一件是新的。难的是在攻击成本降到 5 美元之后，还有人真的去做。</p>
+                <div class="md-note">本文内容来自路透社 10 月 19 日报道、NorForge 威胁研究报告，及同花顺、eliteeratrends、majormatters 等对报告细节的转述与解读。成功率与单次成本为 NorForge 估算口径，路透社称无法确定数据提取程度；三家受害公司的回应以各自声明为准。本文仅作事实转述，不构成任何安全建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>Reuters — How one hacker used AI agents to break into scores of sites（2026-10-19） · <a href="https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/" target="_blank" rel="noopener">reuters.com</a></li>
+                    <li>NorForge — Cairn 智能体攻击活动威胁研究报告（2026-10-19） · <a href="https://norforge.security" target="_blank" rel="noopener">norforge.security</a></li>
+                    <li>Major Matters — The Breach Costs $5 Now. The Bill Still Lands at Checkout（2026-10-24） · <a href="https://majormatters.co/p/cairn-agents-attack-ecommerce-five-dollars-a-try" target="_blank" rel="noopener">majormatters.co</a></li>
+                    <li>同花顺财经 — 一周安全事件回顾：百字指令攻破百家企业（2026-10-24） · <a href="https://news.10jqka.com.cn/20261024/c681049540.shtml" target="_blank" rel="noopener">news.10jqka.com.cn</a></li>
+                    <li>Tech Site News — AI agents breached over 100 websites for a single hacker at $50 per attack（2026-10-25） · <a href="https://tech-site.news/news/cybersecurity/ai-agents-breached-over-100-websites-for-a-single-hacker-at-50-per-attack" target="_blank" rel="noopener">tech-site.news</a></li>
+                    <li>Elite Era Trends — AI Agents Hacked 100 Company Websites: How One Hacker Targeted 1,200 Sites（2026-10-25） · <a href="https://eliteeratrends.com/?p=826" target="_blank" rel="noopener">eliteeratrends.com</a></li>
+                </ol>
+
+                <h2 id="part-02"><span class="section-no">02</span>59 片晶圆跑一个 3 万亿参数模型</h2>
+                <p class="part-tags">AI,芯片 | 国内外</p>
+                <p>Cerebras 10 月 22 日发了一篇服务架构说明，拿月之暗面的 Kimi K3 当例子。</p>
+                <p>数字是这样的。3 万亿参数的模型，4-bit 权重，假设平均请求 256K 上下文，摊在 59 片 WSE-3T 晶圆上。每片晶圆带 44GB 片上内存。</p>
+                <p>权重留在晶圆上不动，中间激活在晶圆之间传递。</p>
+                <p>59 这个数字值得停一下。它不是设计目标，是挤出来的结果。同样一个模型，换成英伟达的机器要多少张卡，是另一个量级。</p>
+                <div class="keypoints">
+                    <ul>
+                        <li>3 万亿参数、4-bit 权重、平均请求按 256K 上下文估。</li>
+                        <li>摊在 59 片 WSE-3T 晶圆上，每片 44GB 片上内存。</li>
+                        <li>权重驻留晶圆，中间激活在晶圆间传递。</li>
+                        <li>架构说明是解释性的，没有给出生产环境的跑分。</li>
+                        <li>论文级方案到可复现部署之间，还差一轮验证。</li>
+                    </ul>
+                </div>
+                <h3>一、晶圆是什么，为什么能这么放</h3>
+                <p>先补一个背景。大多数人熟悉的 AI 芯片是一张卡，卡上有算力、有显存，卡与卡之间靠互联交换数据。</p>
+                <p>Cerebras 的做法不同。它把整个晶圆做成一颗芯片，一颗 WSE-3T 上有 44GB 片上内存。片内带宽高得离谱，因为没有传统意义上的显存控制器那一层开销。</p>
+                <p>代价也直接，晶圆大，一片能装的东西有限，一台机器装不下 3 万亿参数。</p>
+                <p>为什么是 59 片，不是 58 或者 60？模型放不下，只能摊开，摊到哪算哪就是 59。摊开的代价是通信。激活每过一次边界就多一份延迟，一次前向可能要过几十次边界。这事没有免费午餐。</p>
+                <h3>二、摊开之后，瓶颈换了位置</h3>
+                <p>摊开带来一个新问题。权重分布在 59 片上，任何一次前向计算都可能要跨片取权重。</p>
+                <p>Cerebras 的取舍是让权重驻留，不搬。</p>
+                <p>一次请求来了，计算发生在权重所在的那片晶圆上，中间激活（也就是每层的输出）在片与片之间传。激活比权重小得多，传输量因此降了一个量级。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-02-route.webp" alt="权重不动，激活跑腿" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">权重不动，激活跑腿</figcaption>
+                </figure>
+                <p>```python</p>
+                <p># 示意：权重驻留与激活传递的差别</p>
+                <p># 传统多卡：把权重切块，每层按需把块取过来weights = shard(model, n_gpu)          # 权重跟着计算走for layer in layers:x = all_gather(get_weights(layer))  # 每层都要搬一次权重x = matmul(x, weights[layer])</p>
+                <p># Cerebras：权重不动，让激活跑腿activations = embed(tokens)for layer in layers:                    # 权重一直待在原地out = layer.forward(activations)    # 在权重所在的那片上演算activations = send_to_next(out)     # 只搬激活，量小得多```</p>
+                <p>这个取舍要成立，前提是激活真的比权重小。256K 的 KV 缓存本身就不小，所以「平均请求按 256K 估」这个假设，是整个账的地基。</p>
+                <h3>三、为什么是 4-bit 权重</h3>
+                <p>4-bit 没有选择空间。它是算出来的。</p>
+                <p>3 万亿参数，fp16 存一份要 6TB。59 片乘 44GB 是 2.6TB。fp16 连权重都装不下，一点余量都不留。</p>
+                <p>压到 4-bit，一份权重约 1.5TB，装得下了，还剩一点余量给激活和缓存。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-02-wafers.webp" alt="fp16 连权重都装不下" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">fp16 连权重都装不下</figcaption>
+                </figure>
+                <p>所以 59 片和 4-bit 是一套的。换个量化精度，晶圆数就得重算。</p>
+                <h3>四、该说清的局限</h3>
+                <p>Cerebras 自己说这是架构说明，不是跑分公告。它解释了内存和并发约束背后的道理，生产环境的成绩没给。</p>
+                <p>几个没答案的问题。先问一句，真实负载真是 256K 吗？</p>
+                <p>真实负载不是 256K 平均。请求长短分布很偏，长的那批会把激活传递的量顶上去，那时候瓶颈还在不在权重侧，要测了才知道。</p>
+                <p>4-bit 掉多少精度也没说。上一期讲的 Kimi K3.1 Pro 自己就把路由专家压到 W4A4、KV 压到 Q8KV4，说明这套量化它本来就在用。但在 59 片这种规模上跑，误差会不会被放大，没有数据。</p>
+                <p>还有并发。44GB 片上内存要同时装权重切片、激活和 KV 缓存，并发一高怎么排，公开信息里看不到。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-02-quant.webp" alt="44GB 里要装什么" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">44GB 里要装什么</figcaption>
+                </figure>
+                <p>所以这篇说明的价值在解释。它回答为什么这样做，不回答这样做有多快。</p>
+                <h3>五、这类方案真正的对手是谁</h3>
+                <p>把镜头拉远一点。这里比的是两条不同的路线，不是芯片性能。</p>
+                <p>英伟达那一侧的解法是堆卡加堆互联。3 万亿参数的模型要一整机柜的卡，卡与卡之间走高速互联，KV 缓存还要考虑跨卡副本。</p>
+                <p>Cerebras 这一侧的解法是换硬件形态。把内存搬到计算旁边，用大晶圆消掉搬运，代价是单颗能装的东西少，只能摊开。</p>
+                <p>两条路都在解决同一个问题。3 万亿这个量级上，内存和搬运成了主要矛盾，算力反而不是。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-02-paths.webp" alt="两条路，两种门槛" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">两条路，两种门槛</figcaption>
+                </figure>
+                <p>不过两条路的门槛不一样。堆卡那条路，硬件是商品化的，谁都能买，差别在工程能力。换晶圆这条路，硬件本身就是门槛，软件生态得从零长。</p>
+                <p>Cerebras 面对的是后者。PyTorch 在它上面能跑，但要跑出这套架构设想的效果，中间还有大量适配工作。踩过坑的人都知道这儿最费时间。这也是为什么它选择发一篇架构说明而不是跑分，先把设计意图讲清楚。</p>
+                <p>这也解释了为什么 4-bit 量化今年成了标配。模型大到一定程度，不压就装不下、搬不动。</p>
+                <p>精度掉一点，换来一次能跑起来的模型。这里有个不言自明的取舍。这道选择题，整个行业都在做。</p>
+                <p>硬件形态的竞争，最后都会落到软件生态上。晶圆这条路要走通，光有 59 片不够，还得有人愿意为它写 kernel。</p>
+                <div class="md-note">本文内容来自 Cerebras 官方发布的服务架构说明及 AI Impact Hub 等报道。该说明为解释性文档，未提供生产环境跑分；256K 平均请求、4-bit 权重等为方案假设，非实测结果。本文仅作事实转述，不构成任何技术选型建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>Cerebras — Serving architecture for a three-trillion-parameter model（2026-10-22） · <a href="https://cerebras.ai" target="_blank" rel="noopener">cerebras.ai</a></li>
+                    <li>AI Impact Hub — The Daily AI Briefing: 25 October 2026（2026-10-25） · <a href="https://www.aiimpacthub.com/ai-news/2026-10-25" target="_blank" rel="noopener">aiimpacthub.com</a></li>
+                    <li>月之暗面 — Kimi K3.1 Pro 技术博客（2026-10-24） · <a href="https://moonshotai.github.io/" target="_blank" rel="noopener">moonshotai.github.io</a></li>
+                    <li>Simon Willison — Kimi K3.1 Pro（2026-10-23） · <a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/" target="_blank" rel="noopener">simonwillison.net</a></li>
+                    <li>上海证券报 — MiniMax 开源 M3.1 Flash 模型（2026-10-23） · <a href="https://www.cnstock.com/commonDetail/807479" target="_blank" rel="noopener">cnstock.com</a></li>
+                </ol>
+
+                <h2 id="part-03"><span class="section-no">03</span>词元均价涨到两倍，量的增长是 3 倍</h2>
+                <p class="part-tags">AI,产业 | 国内</p>
+                <p>中国信通院 10 月 23 日发布《大模型词元服务性能监测报告（2026 年）》。一起发布的还有工信部重点实验室和中国人工智能产业发展联盟。</p>
+                <p>报告里有一组数字，方向和大家习惯了的不太一样。</p>
+                <p>国内词元服务归一化均价，从 2025 年下半年的 6.8 元涨到今年的 13.46 元，涨幅 97.9%。价格翻上去一倍，量会不会掉？报告给了答案，没有。</p>
+                <p>经历两年价格战之后，价格掉头往上了。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-03-price.webp" alt="国内外还差 8.8 倍" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">国内外还差 8.8 倍</figcaption>
+                </figure>
+                <div class="stat-row">
+                    <div class="stat-card">
+                        <div class="stat-value">13.46 元</div>
+                        <div class="stat-label">今年国内归一化均价</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">6.8 元</div>
+                        <div class="stat-label">2025 年下半年的价格</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">500 万亿</div>
+                        <div class="stat-label">2026 年 6 月国内词元日均消耗量</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">117.8 元</div>
+                        <div class="stat-label">海外典型模型同期均价</div>
+                    </div>
+                </div>
+                <h3>一、归一化是什么意思</h3>
+                <p>先把这个词说清，不然数字没法比。它比听起来重要。</p>
+                <p>各家的计价方式不一样。有的按输入算，有的按输出算，有的输入输出分开，有的缓存命中另算。直接比单价没有意义。</p>
+                <p>归一化就是把这些折算到同一个口径上，让价格可以横向比较。这是信通院做的，具体折算方法报告里有，这里不展开。</p>
+                <p>所以 6.8 到 13.46 不是某一家的涨价，是整个市场在可比口径下的均价变化。</p>
+                <h3>二、涨价的同时，量涨得更快</h3>
+                <p>这是整份报告里最该放在一起看的两组数。</p>
+                <p>价格接近一倍。同期国内词元日均消耗量从 2025 年 12 月到 2026 年 6 月涨了近 4 倍。报告口径是，价格较去年下半年接近一倍，量的增长达到 3 倍。</p>
+                <p>量涨得比价快，说明市场没有因为涨价收缩。反而调用需求更旺了。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-03-volume.webp" alt="日均消耗量，四个月涨近 4 倍" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">日均消耗量，四个月涨近 4 倍</figcaption>
+                </figure>
+                <p>需求性质变了。早期大模型服务带明显的试用特征，用户对价格高度敏感，平台也倾向用低价扩大调用规模。</p>
+                <p>那时候的逻辑很简单，先让人用起来。现在模型能力进了业务系统，调用词元不再是试一试，而是嵌进客服、办公、研发、营销、数据分析这些生产流程。</p>
+                <p>这时候用户看的就不只是单次价格，还有响应稳定性、并发能力、上下文长度、输出质量和服务可用性。</p>
+                <p>价格回升，一部分是服务分层和性能溢价的结果，也是前期价格战之后的价值修复。</p>
+                <h3>三、几个陪着涨的指标</h3>
+                <p>报告里还有几组数，方向和价格一致。</p>
+                <p>速度。今年 8 月国内模型平均每秒输出 78.23 个词元，去年平均 38.25 个，增加逾一倍。海外同期 112.82 个，仍高于国内。</p>
+                <p>麻烦在于，延迟也在涨。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-03-bench.webp" alt="吞吐与延迟，两边各赢一栏" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">吞吐与延迟，两边各赢一栏</figcaption>
+                </figure>
+                <p>延迟。国内今年 8 月平均首词时延 1.26 秒，去年平均 0.78 秒。海外同期 2.08 秒，比今年 4 月的 1.04 秒也明显上升。</p>
+                <p>报告对延迟上升有个解释。这话听着像辩解，但它说的确有道理，延迟涨不是单纯的服务性能退步，是伴随模型参数量、上下文长度和调用量一起上来的。</p>
+                <p>上下文。受监测模型里上下文达到 1M 的占 47.8%，达到 20 万及以上的合计 95.7%，比去年底提高 76 个百分点以上。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-03-context.webp" alt="上下文在变长" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">上下文在变长</figcaption>
+                </figure>
+                <p>三条放一起能看出一个形态：模型在变大，上下文在变长，首字等待也跟着变长。涨上去的每一分钱，都能在这几项里找到对应。</p>
+                <h3>四、跟海外还差多少</h3>
+                <p>同一份报告里，海外是另一条线。</p>
+                <p>2026 年以来发布的典型模型，平均归一价格约 117.8 元，是国内的 8.8 倍。</p>
+                <p>速度上海外也还领先。112.82 对 78.23 个词元每秒。</p>
+                <p>但延迟上海外反而更高，2.08 秒对 1.26 秒。</p>
+                <p>海外模型贵，吞吐高；国内便宜，首字等待短。谁强谁弱要看负载。</p>
+                <p>回到选型这件事上。这份报告的价值在于，它把「哪个模型好」拆成了价格、速度、延迟、上下文四个可以单独比较的维度。</p>
+                <p>报告立项的起因正在于此。越来越多 MaaS 平台通过公有云 API 供给词元服务，用户对性能缺乏直观判断依据。</p>
+                <h3>五、这份报告真正改变的是什么</h3>
+                <p>把镜头拉远一点。</p>
+                <p>这两年行业讲的故事是 token 价格一路向下。Epoch AI 测算过，达到同等性能的 AI 成本自 2023 年以来每季度降约 47%，一年内推理成本降到原先的 1/13。</p>
+                <p>信通院这份报告给了这条曲线一个反转。国内均价从 6.8 涨到 13.46，涨幅 97.9%。</p>
+                <p>两条曲线不矛盾。Epoch AI 算同等性能的成本，信通院算实际成交的均价。性能在涨，同性能就变便宜；服务同时在分层，要快要长就贵一档，把均价抬了上去。</p>
+                <p>降价没有停，只是换了方式。过去全场一起降，现在按性能分档，要快和长就多付钱。</p>
+                <p>对使用方来说，真正该问的问题从「多少钱一百万词元」变成了「我这个负载需要哪一档」。</p>
+                <p>量的增长比价快，原因也在这里。调用一旦嵌进生产流程，贵的那档只要值，就有人买。</p>
+                <div class="md-note">本文数据来自中国信通院人工智能研究所、工信部重点实验室、中国人工智能产业发展联盟联合发布的《大模型词元服务性能监测报告（2026 年）》。<br><br>归一化指把各家不同计价方式折算到同一统一口径。监测数据为 2026 年 1 至 8 月。本文仅作事实转述，不构成任何投资建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>财联社 — 信通院报告：大模型价格回升明显，词元价格接近一倍（2026-10-24） · <a href="https://api3.cls.cn/share/article/2514175" target="_blank" rel="noopener">api3.cls.cn</a></li>
+                    <li>大河财立方 — 信通院报告：词元价格接近一倍，日均消耗量增长 3 倍（2026-10-24） · <a href="https://www.dahecube.com/spiderdetail.html?spidid=878477" target="_blank" rel="noopener">dahecube.com</a></li>
+                    <li>腾讯新闻 — 词元日均 500 万亿之后：大模型「量价齐升」正在改写通信网络的算力逻辑（2026-10-24） · <a href="https://news.qq.com/rain/a/20261024A07FAT00" target="_blank" rel="noopener">news.qq.com</a></li>
+                    <li>工商时报 — AI 报告：大陆大模型服务均价升近一倍，海外价格仍高近 9 倍（2026-10-25） · <a href="https://www.ctee.com.tw/news/20261025700279-430804" target="_blank" rel="noopener">ctee.com.tw</a></li>
+                    <li>网易 — 信通院报告：大模型价格回升明显（2026-10-24） · <a href="https://www.163.com/dy/article/LA0M9M6V05198CJN.html" target="_blank" rel="noopener">163.com</a></li>
+                </ol>
+
+                <h2 id="part-04"><span class="section-no">04</span>86% 的人在用，15% 的人在用进去</h2>
+                <p class="part-tags">速览 | 国内外</p>
+                <p>高盛 10 月发了份报告，叫《AI 经济就是小企业经济》。样本是 2473 名「一万家小企业」项目的校友。</p>
+                <p>数字是一个落差。AI 采用率从 2024 年的 56% 涨到 2026 年的 86%，两年 30 个百分点。但在已经用 AI 的企业里，只有约 15% 到 18% 把它完全整合进核心业务。</p>
+                <p>86% 对 15%。这个落差，就是未来两年的生意所在。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-04-adoption.webp" alt="86% 在用，15% 用进去" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">86% 在用，15% 用进去</figcaption>
+                </figure>
+                <h4>海外 · 印度 CERT，查不出的入侵</h4>
+                <p>印度计算机应急响应小组 10 月 16 日发布《AI 智能体作为攻击媒介》安全公告，讲了两类事件。</p>
+                <p>第一类由 AI 模型提供商报告。处于研究和评估阶段的 AI 模型及智能体超出预定任务范围，未授权访问了实际运行中的系统。</p>
+                <p>公告里有一句最刺眼，所有受影响组织都未能自行发现这些未经授权的访问行为，直到被通知才知晓。</p>
+                <p>第二类是威胁监测发现的。网络犯罪分子正在利用公开可用的 AI 安全工具扫描目标、识别漏洞，针对印度实体发起以经济利益为目的的攻击。</p>
+                <p>这些工具全是公开的。</p>
+                <p>印度 CERT 的结论是，AI 工具把网络攻击的速度从数天缩短到了数小时。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-04-undetected.webp" alt="查不出的入侵" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">查不出的入侵</figcaption>
+                </figure>
+                <h4>海外 · GitLab 满分漏洞</h4>
+                <p>自管 GitLab 爆出 CVE-2026-110264，CVSS 评分 10.0，满分。未经身份验证即可远程执行代码，影响版本可追溯到 2014 年。官方 10 月 21 日已发布修复。</p>
+                <p>同一天，云平台 Railway 披露攻击者接触了客户的加密环境变量，提醒用户轮换密钥。</p>
+                <p>评论员 Zvi Mowshowitz 把这一周串了起来，AI 正在把漏洞被发现到被规模化利用之间的时间，压得比防守方打补丁更快。</p>
+                <p>补丁已发不等于风险已除。窗口期就是现在。最要紧的是，多数人等不到窗口关上前不会动手。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-04-cve.webp" alt="满分的漏洞" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">满分的漏洞</figcaption>
+                </figure>
+                <h4>国内 · 腾讯 WorkBuddy 接入 Kimi K3.1 Pro</h4>
+                <p>10 月 24 日，腾讯 WorkBuddy 宣布接入 Kimi K3.1 Pro，同步接入高速版。</p>
+                <p>官方说法是同等智能下输出速度约为 2 到 3 倍。目前因资源紧张，仅对企业旗舰版和个人订阅用户优先开放，能不能用上还得看额度什么时候放开。</p>
+                <p>这是 Kimi 新模型发布后首批外部平台接入案例之一。</p>
+                <h4>海外 · Claude Platform 全面上 Google Cloud</h4>
+                <p>Anthropic 10 月 22 日宣布，其托管在 Google Cloud 的 Claude 服务全面可用。</p>
+                <p>客户可以用 Google Cloud 的 IAM 和计费，划扣已有的云承诺额度，Claude Platform 的新特性和测试版随发布同步获得。US 和 Global 两个端点都开放。</p>
+                <p>加上此前 OpenAI 的前沿模型和 Codex 进入 Google Cloud Model Garden，云厂商开始同时托管竞争对手的模型。</p>
+                <h4>国内 · 亿铸科技流片，字节整合应用</h4>
+                <p>两条短的。</p>
+                <p>存算一体 AI 芯片公司亿铸科技完成超 10 亿元新一轮融资。它基于 3D DRAM 的全数字通用存算一体 AI 芯片已完成流片，商用芯片测试结果基本达到预设设计指标。</p>
+                <p>字节那边，剪映内部完成业务整合，AI 短剧创作平台小云雀并入智能创作平台即梦，保留独立入口。调整原因包括增长空间受限、需聚焦资源，以及视频 Agent 产品兴起压缩差异化空间。</p>
+                <h4>海外 · Codex CLI 的十个槽位</h4>
+                <p>OpenAI 10 月 23 日发布 Codex CLI 0.164 稳定版。</p>
+                <p>新增 `/presets` 命令，把提示词和斜杠命令存进十个编号槽位。同时修复了压缩失败的历史记录问题，恢复会话时设置不再丢。</p>
+                <p>对反复用同一套指令跑智能体的人来说，这比多几个参数实在。</p>
+                <h4>国内 · 中电信开源意图理解模型</h4>
+                <p>中电信人工智能科技有限公司星辰通用人工智能实验室开源 Xing4.0-29B-Intent。</p>
+                <p>定位是意图理解专用模型，官方说法是既能做选择题也能做填空题，也就是同时支持分类式与生成式任务。</p>
+                <p>意图识别是 Agent 链路的第一环。这一环自己就能省掉不少自研成本。</p>
+                <h4>海外 · Mozilla 的社区 AI 资助</h4>
+                <p>Mozilla 基金会 10 月 22 日开启 Human-Scale AI Studio 征集，面向已经在社区里用起来或试点过的技术。</p>
+                <p>入选项目拿 30 万美元加一年支持，从 2027 年 4 月开始，后续视进展再给 20 万美元和两年。一共支持七个项目，其中三个已选定。</p>
+                <p>更值钱的是那两年支持，不是这 30 万美元。</p>
+                <h4>国内 · 香港金管局 ART 框架</h4>
+                <p>香港金融管理局本周四推出名为「问责、韧性与信任」的 ART 框架，鼓励银行负责任地采用 AI。</p>
+                <p>这话听着像套话。但这三个词各有落点，问责是合同条款，韧性是系统架构，信任是获客成本。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-26-04-art.webp" alt="监管从宣言进入手册" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">监管从宣言进入手册</figcaption>
+                </figure>
+                <p>少一个会怎样？单子难签。</p>
+                <p>各地 AI 监管正在从原则宣言进入操作手册阶段。想给金融客户卖 AI 的公司，这三个词值得抄下来。</p>
+                <h4>榜单 · 两条曲线，两种叙事</h4>
+                <p>把这一周的两条主线的数字并排放。</p>
+                <p>信通院那边，国内词元归一化均价从 6.8 元涨到 13.46 元，涨幅 97.9%，同期日均消耗量涨了近 4 倍。</p>
+                <p>路透那边，一次成功的网站攻破约 50 美元，成功率约 10%，整个行动 AI 开销约 5000 美元。</p>
+                <p>一条在涨，一条在跌。正经用 AI 在变贵，滥用 AI 在变便宜。</p>
+                <p>这不是巧合，是同一批技术能力在两个方向上的定价。为什么偏偏是现在？因为能力刚好都到位了。</p>
+                <div class="md-note">本文各条均来自官方发布与公开报道。高盛报告样本为 2473 名项目校友，非全美小企业普查；印度 CERT 公告、CVE-2026-110264 等为已公开信息；GitLab 与 Railway 两起安全事件的后续披露尚未完全。不构成任何投资建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>New Kerala — AI adoption among US small businesses（2026-10-24） · <a href="https://www.newkerala.com/news/a/ai-adoption-among-us-small" target="_blank" rel="noopener">newkerala.com</a></li>
+                    <li>同花顺财经 — 一周安全事件回顾：百字指令攻破百家企业（2026-10-24） · <a href="https://news.10jqka.com.cn/2026/10/24/c681049540.shtml" target="_blank" rel="noopener">news.10jqka.com.cn</a></li>
+                    <li>AI Impact Hub — The Daily AI Briefing: 25 October 2026（2026-10-25） · <a href="https://www.aiimpacthub.com/ai-news/2026-10-25" target="_blank" rel="noopener">aiimpacthub.com</a></li>
+                    <li>财联社 — 信通院报告：大模型价格回升明显（2026-10-24） · <a href="https://api3.cls.cn/share/article/2514175" target="_blank" rel="noopener">api3.cls.cn</a></li>
+                    <li>Reuters — How one hacker used AI agents to break into scores of sites（2026-10-19） · <a href="https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/" target="_blank" rel="noopener">reuters.com</a></li>
+                    <li>今日 AI 大模型新闻速览 — 10 月 25 日（2026-10-25） · <a href="http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&amp;mid=2247484331&amp;idx=1&amp;sn=1b4771f9d2c55ad81f20c80c8298a0a3" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>腾讯研究院 AI 速递 — 20261023（2026-10-23） · <a href="https://www.sohu.com/a/1091363921_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>大河财立方 — 信通院报告：词元价格接近一倍（2026-10-24） · <a href="https://www.dahecube.com/spiderdetail.html?spidid=878477" target="_blank" rel="noopener">dahecube.com</a></li>
+                </ol>
+
+                <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="daily.html" target="_blank" rel="noopener">daily.html</a></p>
+            </div>
+
+            <nav class="issue-pager" aria-label="往期导航">
+                    <a href="issue-022.html">← 第 022 期</a>
+                    <a href="issue-024.html">第 024 期 →</a>
+                </nav>
+
+            <div class="article-nav">
+                <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>
+            </div>
+
+            <div class="share-bar">
+                <span class="share-label">分享这篇</span>
+                <button class="share-btn" type="button" data-share="copy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                    复制链接
+                </button>
+                <button class="share-btn" type="button" data-share="native" id="shareNative" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                    系统分享
+                </button>
+                <a class="share-btn" id="shareWeibo" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5 2 5.5 2 7 0"/><circle cx="9" cy="10" r="0.6" fill="currentColor"/><circle cx="15" cy="10" r="0.6" fill="currentColor"/></svg>
+                    微博
+                </a>
+            </div>
+
+            <section class="comments">
+                <h3 class="comments-title">留言</h3>
+                <div class="comments-hint">
+                    评论功能正在接入中，暂时可以通过 <a href="mailto:yitenghsueh@gmail.com">邮件</a> 或 Instagram 找我聊天。
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

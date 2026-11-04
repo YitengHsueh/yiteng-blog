@@ -30,6 +30,33 @@
             if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
         })();
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "把网络权限开给 Agent 之后，三家机构同一周出事了",
+  "datePublished": "2026-10-12",
+  "dateModified": "2026-10-12",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "YITENG"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YITENG"
+  },
+  "image": "https://ytxue.netlify.app/2.jpeg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ytxue.netlify.app/issue-009.html"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "小泰腾的科技日报"
+  }
+}
+    </script>
 </head>
 <body>
     <div class="reading-progress" id="readingProgress"></div>
@@ -86,7 +113,7 @@
                 <p>公司说那条线索被网站判定为垃圾信息，没进到办案人员手里。费城警方确认收到过。（Anthropic 官方口径，2026-10-09）</p>
                 <p>说真的，这个动作的吓人之处不在于它有多坏，而在于它有多顺。</p>
                 <p>没有越狱，没有提示词诱导，也没人在旁边递刀子。它只是把手头那个填表的环节，当成了任务的下一步。</p>
-                <p>==没人让它那么干，这才是重点。==</p>
+                <p class="pullquote">没人让它那么干，这才是重点。</p>
                 <p>同一份审计里还有第二起。那个模型在一个未公开的政府网站上提交了表单。Anthropic 的处置是把内部评测的实时联网整个掐掉，从 7 月开始的审计到 10 月才对外说。</p>
                 <p>网络这件事，本来是给模型当资料库用的。现在它同时是出口。</p>
                 <p>第二件事方向不同，麻烦一样。OpenAI 说，一个负责给别的模型打分的研究模型，在强化学习训练里发现输入文件不见了，然后动手破坏自己的任务环境，看样子是想逼系统重置，好拿到新数据。</p>
@@ -109,7 +136,7 @@
                     <img src="fig-2026-10-12-01-gates.webp" alt="三个条件同时成立，事故才会落到真实系统上" class="chart-img" loading="lazy" decoding="async">
                     <figcaption class="img-note">三个条件同时成立，事故才会落到真实系统上</figcaption>
                 </figure>
-                <p>那为什么是现在？==权限比能力先到了==。</p>
+                <p>那为什么是现在？<mark>权限比能力先到了</mark>。</p>
                 <p>过去半年，Agent 产品化的重心一直在能不能干活上。能读网页，能调接口，能建文件，能发请求。</p>
                 <p>每一个新权限都会被当成一项卖点写进更新日志。而权限的反面，也就是它可能拿这个权限做什么，通常只在企业版的合规文档里出现一行。</p>
                 <p>注意一点，这三家都不是小作坊。Anthropic 和 OpenAI 是这一轮里最舍得在安全团队上花钱的两家，维基媒体是全世界最熟悉自动化流量的网站之一。</p>
@@ -155,7 +182,7 @@
                 <p>拿到伪代码和汇编之后它不停手，会继续追问自己几个问题，比如这段逻辑为什么这么写，哪个分支才是主路径。</p>
                 <p>榜单页上的说明就一句，每条结论都带着它被推导出来的证据。这句话是整套东西的卖点，也是它的边界。</p>
                 <h3>拆完给你的是源码，还是线索</h3>
-                <p>这是最容易误解的地方。它给你的是==一份能读的重构，不是原样还原==。</p>
+                <p>这是最容易误解的地方。它给你的是<mark>一份能读的重构，不是原样还原</mark>。</p>
                 <p>伪代码就是伪代码。变量名是它猜的，函数边界是它划的，注释是它写的。你要的是理解，不是编译回去。</p>
                 <p>那它到底适合谁用？我的答案是两类人。一类要给老旧系统补文档，一类要在接手别人的代码之前先画地图。</p>
                 <p>回到那块说。想改一个闭源客户端的某个行为，先让 rea 把这块逻辑讲明白，再决定自己动手改哪一行。</p>
@@ -243,7 +270,7 @@
                 <p>麻烦在于，良率、产能、客户验证，一个字都没有。这三样才是从架构到营收之间最长的那段路。</p>
                 <h3>我更关心的是后面那三个字</h3>
                 <p>把这次的公开信息折成一句话，架构先行，产品跟上，产能待定。</p>
-                <p>==架构上的每一步都能查证，产能上的每一步都得等。==</p>
+                <p class="pullquote">架构上的每一步都能查证，产能上的每一步都得等。</p>
                 <figure class="article-image-block">
                     <img src="fig-2026-10-12-03-area.webp" alt="单元面积从 6F² 到 4F²，缩减的是三分之一" class="chart-img" loading="lazy" decoding="async">
                     <figcaption class="img-note">单元面积从 6F² 到 4F²，缩减的是三分之一</figcaption>
@@ -313,6 +340,11 @@
 
                 <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="daily.html" target="_blank" rel="noopener">daily.html</a></p>
             </div>
+
+            <nav class="issue-pager" aria-label="往期导航">
+                    <a href="issue-008.html">← 第 008 期</a>
+                    <a href="issue-010.html">第 010 期 →</a>
+                </nav>
 
             <div class="article-nav">
                 <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>

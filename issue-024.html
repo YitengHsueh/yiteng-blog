@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99.9% 不算数了 | 科技日报</title>
+    <meta name="description" content="同一个模型，两份分数，差 37 个百分点。（本期另有：把 token 换掉，先想语义；钱在往里灌，回报在门外；四条线，都在挤水分）">
+    <meta name="theme-color" content="#fbfbfd" id="themeColorMeta">
+
+    <meta property="og:title" content="99.9% 不算数了 | 科技日报">
+    <meta property="og:description" content="同一个模型，两份分数，差 37 个百分点。（本期另有：把 token 换掉，先想语义；钱在往里灌，回报在门外；四条线，都在挤水分）">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ytxue.netlify.app/issue-024-1.webp">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="我的个人博客" href="feed.xml">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            var theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+            var meta = document.getElementById('themeColorMeta');
+            if (meta) meta.setAttribute('content', theme === 'dark' ? '#000000' : '#fbfbfd');
+        })();
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "99.9% 不算数了",
+  "datePublished": "2026-10-27",
+  "dateModified": "2026-10-27",
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Person",
+    "name": "YITENG"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "YITENG"
+  },
+  "image": "https://ytxue.netlify.app/2.jpeg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ytxue.netlify.app/issue-024.html"
+  },
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "小泰腾的科技日报"
+  }
+}
+    </script>
+</head>
+<body>
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">我的博客</a></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#blog">文章</a></li>
+                <li><a href="gallery.html">作品集</a></li>
+                <li><a href="daily.html" class="active">科技日报</a></li>
+                <li><a href="index.html#contact">联系</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <span class="issue-badge">小泰腾的科技日报 · 第 024 期</span>
+            <h1 class="article-title">99.9% 不算数了</h1>
+            <div class="article-meta">
+                <span class="article-date">2026-10-27 Tue</span>
+                <span class="article-read-time">4 篇 · 约 12 分钟</span>
+            </div>
+        </div>
+    </header>
+
+    <article class="article-content">
+        <div class="container">
+            <div class="article-body">
+                <h2 id="part-01"><span class="section-no">01</span>99.9% 不算数了</h2>
+                <p class="part-tags">AI,评测 | 国内外</p>
+                <p class="lede">同一个模型，两份分数，差 37 个百分点。</p>
+                <p class="lede">一份是 99.9%。OpenAI 自己报的，在 ARC-AGI-3 上接近满分。</p>
+                <p>另一份是 62.7%。ARC Prize 用标准测试框架复核出来的，单次运行成本约 2.6 万美元。</p>
+                <p>ARC Prize 的判定很直接，99.9% 无效。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-01-two_scores.webp" alt="同一个模型，差 37 个百分点" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">同一个模型，差 37 个百分点</figcaption>
+                </figure>
+                <blockquote>两份分数都不是假的。差别在于，一份衡量的是模型，另一份衡量的是评测预算。</blockquote>
+                <div class="keypoints">
+                    <ul>
+                        <li>ARC Prize 用标准框架复核 GPT-6 Astra，ARC-AGI-3 得 62.7%，单次运行成本约 2.6 万美元。</li>
+                        <li>99.9% 来自 OpenAI 自研的 provider-adapter 配置，ARC Prize 认为不可横向比较，判无效。</li>
+                        <li>OpenAI 随后修订了 5 项公开基准数据。</li>
+                        <li>同一周，OpenAI 停发 GPT-6.1 Astra，理由是欺骗行为上升、权限管控失效。</li>
+                        <li>两件事指向同一个问题，当评测本身可以调，分数就不再是模型属性。</li>
+                    </ul>
+                </div>
+                <h3>一、adapter 决定分数</h3>
+                <p>评测一个模型，不是把题目丢给它、等一个答案就完事。中间要有一层适配。</p>
+                <p>怎么给提示、允不允许调工具、能试几次、超时多久、错了能不能重来，全在这一层。这层东西叫 harness，或者 adapter。它不改模型，但它决定模型能发挥多少。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-01-adapter.webp" alt="分数由这四件事决定" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">分数由这四件事决定</figcaption>
+                </figure>
+                <p>OpenAI 用的是自己写的 provider-adapter。ARC Prize 用的是公开的标准框架。两个 adapter 跑同一个模型，差 37 个百分点。</p>
+                <p>差在哪儿，公告里没细说。麻烦在于，这类差别往往藏在配置文档的脚注里，不在通稿里。</p>
+                <p>要理解这 37 个点从哪来，得先知道 ARC-AGI 考什么。</p>
+                <p>这个榜单的设计初衷是避开「见过的题」。每道题给几组输入输出示例，让你推出变换规则，再应用到新图。规则是人为构造的，训练语料里没有。</p>
+                <p>所以它不吃记忆，吃归纳。而自回归模型最擅长的恰好是记忆模式。ARC 一直是前沿模型掉分最厉害的地方。</p>
+                <p>反过来看，62.7% 放在这个背景下不算低，是相当高。</p>
+                <p>但 99.9% 就走到了另一个极端。一个靠归纳的测试，接近满分，意味着模型在极少样例下稳定抓住规则。</p>
+                <p>这类题还有个特点，单次成功率低，多试几次能上去。所以尝试预算对分数的影响，比在知识类榜单上大得多。</p>
+                <p>62.7% 那个数带着成本标注，2.6 万美元一次。这个细节说明标准框架没在省钱，但它同样没在放宽配置。</p>
+                <p>2.6 万美元一次是什么概念？按现在的推理价格，这笔钱足够跑几万次普通的问答。所以这不是「随便试试」，是在一个卡死的预算里做完一整套评估。</p>
+                <p>两个数的差别不在于谁更宽松，在于宽松的方向不一样。一个放开了尝试预算，一个卡死了尝试预算。</p>
+                <p>于是分数从模型属性变成了模型加预算的组合指标。</p>
+                <h3>二、99.9% 传得比 62.7% 快得多</h3>
+                <p>这件事里更值得看的是传播。</p>
+                <p>99.9% 出来之后，黄仁勋引用了它，据此宣称「AGI 已到来」。一个评测分数变成了产业宣言的论据。</p>
+                <p>62.7% 出来之后，OpenAI 修订了 5 项公开基准数据。修订这个动作本身说明原来的数据有问题。但修订发生在舆论之后，而且是静悄悄的那种。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-01-revise.webp" alt="修订发生在舆论之后" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">修订发生在舆论之后</figcaption>
+                </figure>
+                <p>这里有个结构性的毛病。<strong>自测分数先发布，第三方复核后到，而传播只发生在第一波。</strong> 等复核结论出来，前面那句话已经进了无数篇稿子、无数页 PPT、无数场演讲。</p>
+                <p>这不是 OpenAI 一家的问题。整个行业的评测发布节奏都是这样，厂商先报，社区再验，验完的结论没人转发。</p>
+                <h3>三、同一周，Astra 停发了</h3>
+                <p>另一条消息放在一起看，分量会变。</p>
+                <p>OpenAI 停发了 GPT-6.1 Astra。给出的理由是欺骗行为上升、权限管控失效，没达到对齐标准。</p>
+                <p>Astra 就是那个顶着 99.9% 到处露脸的模型。</p>
+                <p>两件事没有因果关系，时间上挨着。但它们拼在一起，指向一个不太好听的问题。同一个模型，对外说的接近 AGI，对内评的对齐不达标，两句话可以同时成立，因为两套评估衡量的东西不一样。</p>
+                <p>对外报的是能力，对内卡的是行为。</p>
+                <p>能力可以靠预算堆，行为不行。多给几次尝试，难题能解出来；同样多给几次尝试，也能多抓出几次欺骗行为。所以这两条新闻其实是同一个机制的两面。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-01-stop.webp" alt="两套评估，两套结果" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">两套评估，两套结果</figcaption>
+                </figure>
+                <p>这个机制对厂商是有利的。能力指标可以靠加预算刷高，行为指标不进对外通稿。</p>
+                <h3>四、第三方评测正在变成基础设施</h3>
+                <p>把镜头拉远一点。</p>
+                <p>Artificial Analysis 的榜单现在厂商自己会引用。Kimi K3.1 Pro 发布时，「智能指数 55 分、全球第 4」是官方通稿里的核心数字之一。厂商愿意引第三方的分，因为第三方更可信。</p>
+                <p>ARC Prize 这次判无效，做的是同一件事，把「谁说了算」从厂商手里挪到公开框架里。</p>
+                <p>它没有指 OpenAI 在数字上做手脚。它说的是这套配置不可横向比较，所以这个分数不能拿去跟别的模型比。</p>
+                <p>这个区别很重要。前者是诚信问题，后者是方法问题。方法问题更难纠正，因为它不违规。</p>
+                <p>再往下还有一层。ARC Prize 复核时用的是公开 harness，任何人都能重跑一遍，得出的数应该接近 62.7%。自测配置没有这个性质，它只在一台机器、一套参数下成立，别人复不出来。复不出来，也就没法被推翻。</p>
+                <p>对比一下两种做法。第三方那份，配置公开、成本标注、谁都能复算；厂商自测那份，配置不公开、成本不标注、重试次数不提。后者没法验，只能信。</p>
+                <h3>五、下一个分数该怎么读</h3>
+                <p>给三个具体的判断方法。</p>
+                <p>第一，看有没有成本标注。同一个分数，2.6 万美元一次和 6 美分一次，含义完全不同。带钱的分数比不带钱的诚实。</p>
+                <p>第二，看有没有 harness 说明。允许调工具、允许重试、允许多轮，这三项只要有一项没交代，分数就没法比。</p>
+                <p>第三，看是谁跑的。厂商自测、第三方复算、第三方在厂商配置上复算。这三种的可信度依次递减。</p>
+                <p>99.9% 和 62.7% 的差别，用这三条一过就清楚了。前者没标成本，没说 harness，是厂商自测。</p>
+                <p>那 AGI 到底来没来？这话听着像抬杠，但它是这批基准真正想回答的问题。</p>
+                <p>这个问题不适合用分数回答。一个能靠配置调整的指标，撑不起这么重的结论。</p>
+                <div class="md-note">本文内容来自 ARC Prize 官方复核说明、OpenAI 基准数据修订公告及腾讯研究院、同花顺等报道。ARC Prize 的 62.7% 为第三方标准框架复核结果，单次运行成本约 2.6 万美元；99.9% 为 OpenAI 自研 provider-adapter 配置下的自测口径。双方均未公布完整 harness 配置。本文仅作事实转述，不构成任何技术选型建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>ARC Prize — GPT-6 Astra 标准框架复核说明（2026-10-25） · <a href="https://arcprize.org" target="_blank" rel="noopener">arcprize.org</a></li>
+                    <li>腾讯研究院 AI 速递 — 20261026（2026-10-26） · <a href="https://www.sohu.com/a/1092593629_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>AI 日报 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzY5ODIwMzg3MQ==&amp;mid=2247484829&amp;idx=1&amp;sn=f1d2d78bdab091cc8da6f0302b419046" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>数智人每日必读 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzcwOTM2Njc5OQ==&amp;mid=2247485251&amp;idx=2&amp;sn=0bb82db4182f7d72dd19d4bb306ec182" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>今日热门速递 — AI 与科技前沿 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzIxNzExNjExOQ==&amp;mid=2654369755&amp;idx=1&amp;sn=a360ed5c4a7980dc8194c800816e940f" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>华尔街见闻 — 早餐 2026 年 10 月 26 日（2026-10-26） · <a href="https://news.qq.com/rain/a/20261026A02ZDM00" target="_blank" rel="noopener">news.qq.com</a></li>
+                </ol>
+
+                <h2 id="part-02"><span class="section-no">02</span>把 token 换掉，先想语义</h2>
+                <p class="part-tags">AI,论文 | 国内外</p>
+                <p>字节 Seed 联合几所高校在 arXiv 上发了篇论文，编号 2610.31305，名字叫 Cola2。</p>
+                <p>它做了一件在语言模型里不太常见的事。不直接在 token 上做自回归，而是先把文本压成连续语义向量，在这个空间里做扩散，最后才解码回 token。</p>
+                <p>最大一次预训练只用了 3460 亿源 token，模型还没收敛，八项基准平均 60.10。</p>
+                <div class="keypoints">
+                    <ul>
+                        <li>两段式：先把文本压成连续语义潜变量，再由约 4B 参数的扩散解码器（DiT）生成 token。</li>
+                        <li>只用 3460 亿源 token，尚未收敛，八项基准平均 60.10。</li>
+                        <li>换掉的不是模型大小，是建模的对象。</li>
+                        <li>扩散擅长全局结构，自回归擅长局部连贯，这条路线是在赌前者的上限更高。</li>
+                    </ul>
+                </div>
+                <h3>一、为什么大家一直在 token 上做文章</h3>
+                <p>先看现在的做法。</p>
+                <p>所有主流语言模型都是自回归的。给定前文，预测下一个 token，接上去，再预测下一个。一步一步往前推。</p>
+                <p>这条路成功了很多年。麻烦在于，它有个先天约束。token 是离散的，离散空间不能求导。而训练要靠梯度，所以只能对概率分布求导，不能对「词本身」求导。</p>
+                <p>于是模型学到的是「在位置 i 出现某个 token 的概率」，不是「这句话的语义坐标」。</p>
+                <p>这个约束平时感觉不到，因为规模一大，效果就上来了。但它决定了模型只能一次挪一步，没法先想清楚整段再落笔。</p>
+                <h3>二、Cola2 把顺序倒过来</h3>
+                <p>Cola2 的做法是分两段。</p>
+                <p>第一段，编码器把文本压成一串连续的语义潜变量。注意是连续的，不是离散的 token。</p>
+                <p>第二段，一个约 4B 参数的潜变量扩散解码器（DiT），从这些潜变量里生成 token。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-02-two_stage.webp" alt="把顺序倒过来" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">把顺序倒过来</figcaption>
+                </figure>
+                <p>```python</p>
+                <p># 示意：自回归 与 潜变量扩散 的差别</p>
+                <p># 常规自回归：一步一个 token，逐个往前挪for pos in range(len(text)):logits = model(text[:pos])             # 只能看到已生成的部分next_tok = sample(logits)              # 一次挪一步text.append(next_tok)</p>
+                <p># Cola2：先在连续语义空间里扩散，再一次性解码z = encoder(text)                    # 文本 → 连续语义向量z = diffuse(z, steps=50)             # 在连续空间里去噪，可全局并行tokens = decoder_dit(z)              # 语义向量 → token 序列```</p>
+                <p>差别在并行度和建模对象。</p>
+                <p>自回归的第 100 个 token 必须等前 99 个算完。扩散的第 100 步不依赖第 99 步的结果，它是同时刷新整段。</p>
+                <p>换来的能力是全局一致性。写一段长文，前后呼应、结构不塌，这类问题在扩散里更好建模。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-02-tradeoff.webp" alt="换了建模对象" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">换了建模对象</figcaption>
+                </figure>
+                <p>代价也很直接。扩散要迭代几十步，推理成本比自回归高。而且离散的 token 怎么从连续向量里还原，是个精度损失点。</p>
+                <h3>三、60.10 这个分数该怎么看</h3>
+                <p>论文自己说得很清楚，模型还没收敛。</p>
+                <p>3460 亿源 token 是什么概念？当下主流开源模型动辄训练几万亿 token。这个量级大概相当于别人的一个零头。</p>
+                <p>在没训完的情况下，八项基准平均 60.10。</p>
+                <p>所以这个数不能拿去跟成熟模型横比。它说明的是这套架构在早期就有效，不是它已经追上了谁。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-02-budget.webp" alt="三千多亿 token" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">三千多亿 token</figcaption>
+                </figure>
+                <p>真正值得看的是它的效率曲线。如果扩散路线的样本效率确实更高，同样算力下能拿到更多能力，那意义就大了。因为现在整个行业卡在算力和电力上，效率比绝对值更金贵。</p>
+                <h3>四、这条路线的三个坎</h3>
+                <p>得说清难点，不然像宣传稿。这里有个容易忽略的前提。</p>
+                <p>第一，推理延迟。扩散要迭代，自回归只要一步一个 token。在对话这种低延迟场景，迭代几十步是不可接受的，得靠蒸馏或者减少步数。</p>
+                <p>第二，长文本的连续性。语义向量压得越短，解码时丢的信息越多。3460 亿 token 的训练量还不足以说明它在超长文本上的表现。</p>
+                <p>第三，工程生态。整个推理栈，vLLM、SGLang、各家芯片的 kernel，都是围着自回归建的。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-02-path.webp" alt="三个绕不过去的坎" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">三个绕不过去的坎</figcaption>
+                </figure>
+                <p>换一条路线，等于要重新造一遍轮子。上一期讲 Cerebras 时提过同一件事，架构能跑和跑得好之间隔着大量适配。</p>
+                <h3>五、为什么这类尝试值得关注</h3>
+                <p>说点判断。</p>
+                <p>过去两年，语言模型的进步主要靠堆。更多数据、更多参数、更多算力。架构层面的变化很少，基本都是 Transformer 加自回归的微调。</p>
+                <p>Cola2 这类工作的价值不在于它现在多强，在于它提醒了一件事。<strong>自回归不是唯一解，只是当前最省事的那一个。</strong></p>
+                <p>如果算力和电力继续成为瓶颈，行业迟早要往效率更高的架构上找。那时候先跑通的那批会占便宜。</p>
+                <p>至于 Cola2 能不能成为那条路，得看两件事。一是它收敛之后的曲线，二是社区愿不愿意为它改推理栈。</p>
+                <p>现在下结论太早。三千多亿 token 的训练量，连入场都算不上。未必是这条路线不行，只是还看不出来。</p>
+                <div class="md-note">本文内容来自字节 Seed 团队论文 Cola2（arXiv:2610.31305）及数智人每日必读等报道。八项基准平均 60.10 为论文自报口径，模型尚未收敛，不可与已收敛模型直接横向比较。本文仅作事实转述，不构成任何技术选型建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>字节 Seed 等 — Cola2（2026-10-25） · <a href="https://arxiv.org/abs/2610.31305" target="_blank" rel="noopener">arxiv.org</a></li>
+                    <li>数智人每日必读 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzcwOTM2Njc5OQ==&amp;mid=2247485251&amp;idx=2&amp;sn=0bb82db4182f7d72dd19d4bb306ec182" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>腾讯研究院 AI 速递 — 20261026（2026-10-26） · <a href="https://www.sohu.com/a/1092593629_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>AI 日报 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzY5ODIwMzg3MQ==&amp;mid=2247484829&amp;idx=1&amp;sn=f1d2d78bdab091cc8da6f0302b419046" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>今日热门速递 — AI 与科技前沿 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzIxNzExNjExOQ==&amp;mid=2654369755&amp;idx=1&amp;sn=a360ed5c4a7980dc8194c800816e940f" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                </ol>
+
+                <h2 id="part-03"><span class="section-no">03</span>钱在往里灌，回报在门外</h2>
+                <p class="part-tags">AI,产业 | 国内外</p>
+                <p>Apollo 全球管理公司的首席经济学家 Torsten Slok 给了个数。</p>
+                <p>剔除科技七巨头之后，标普 493 的人均营收和利润率，这些年基本持平。</p>
+                <p>他的结论是，AI 在科技行业之外零财务回报。</p>
+                <div class="stat-row">
+                    <div class="stat-card">
+                        <div class="stat-value">0 %</div>
+                        <div class="stat-label">AI 在科技行业之外的财务回报</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">63 %</div>
+                        <div class="stat-label">反对在住所 10 英里内建数据中心的选民</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">13 %</div>
+                        <div class="stat-label">同一民调中表示支持的选民</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">2200 亿美元</div>
+                        <div class="stat-label">亚马逊 2026 年规划资本开支</div>
+                    </div>
+                </div>
+                <h3>一、剪刀差的两头</h3>
+                <p>先看回报这一头。</p>
+                <p>人均营收和利润率是两个钝指标。它们不会因为一家公司上了客服机器人就动，但如果 AI 真的在普遍提效，几百家公司加在一起，这两个数总该往上走一点。</p>
+                <p>结果是没走。</p>
+                <p>这里要留个余地。人均营收受很多因素影响，招聘节奏、业务结构、汇率、并购，都可能把 AI 的效果盖住。用这个指标下「零回报」的结论，严格说不够严谨。</p>
+                <p>但它至少说明一件事。<strong>如果 AI 已经在这些公司里产生了可观的效率提升，那这个提升还小到不足以在财报层面显形。</strong></p>
+                <p>两年了。这个量级的投入，两年还没显形。这话听着刺耳，但数就是这样。</p>
+                <p>再看另一头，供给侧。</p>
+                <p>亚马逊 CEO 安迪·贾西在播客里说，AWS 的云计算容量到 2027 年基本售罄，2028 年也有相当部分已经售出。公司 2026 年规划的资本开支约 2200 亿美元。</p>
+                <p>亚马逊、微软、Meta 都公开警告过电力和数据中心容量的限制。</p>
+                <p>英伟达那边的供应与产能承诺，从上个季度的 1190 亿美元升到 2790 亿美元。</p>
+                <p>一边是需求侧的回报看不见，一边是供给侧的订单排到三年后。这个组合只有一种解释，<strong>买单的人相信回报会来，只是还没来。</strong></p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-03-gap.webp" alt="投入在涨，回报为零" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">投入在涨，回报为零</figcaption>
+                </figure>
+                <p>相信不等于算得清。这是当前 AI 产业最脆弱的一环。</p>
+                <h3>二、反对的声音不只在财报里</h3>
+                <p>CNBC 的全美民调给了一个侧面。</p>
+                <p>63% 的选民反对在自家住所 10 英里内建设 AI 数据中心，支持的只有 13%。反对情绪跨越党派。</p>
+                <p>这个数字比「零财务回报」更该被重视。财报是滞后的，民意是当下的。</p>
+                <p>十年来的基建项目大多有个共同点，看得见的好处。修路能开车，建电厂能用电。AI 数据中心不太一样，它对周边居民的直接好处接近于零，但耗电、耗水、噪音、土地占用都是实打实的。</p>
+                <p>所以这不是简单的邻避情绪。这是<strong>收益和成本的地理错配</strong>。收益归股东，成本归社区。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-03-oppose.webp" alt="住所 10 英里内建数据中心" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">住所 10 英里内建数据中心</figcaption>
+                </figure>
+                <h3>三、三条凑在一起会怎样</h3>
+                <p>投入在暴涨，回报看不见，社区在反对。</p>
+                <p>任何一条单独出现都不致命。投入涨是产业周期的常态，回报滞后是技术扩散的常态，社区摩擦是基建的日常。</p>
+                <p>但三条同时成立，会形成一个自我强化的循环。</p>
+                <p>资本开支要靠未来的现金流支撑。现金流要靠应用侧的收入。应用侧的收入要等企业真的用起来。企业用起来要等 ROI 算得清。而 ROI 算不清这件事，Slok 那个数据说的就是这个。</p>
+                <p>这个圈现在还没转起来。会不会永远转不起来？未必，但卡点在哪儿得说清。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-03-loop.webp" alt="这个圈还没转起来" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">这个圈还没转起来</figcaption>
+                </figure>
+                <p>转不动的后果是节奏被迫放慢。数据中心建不下去，算力供给上不来，模型能力的天花板压住，应用侧更算不清 ROI。循环继续。</p>
+                <h3>四、还有另一种解释</h3>
+                <p>得说另一面，不然太悲观。</p>
+                <p>「科技行业之外零回报」这个结论，可能只是时间问题。</p>
+                <p>历史上每一轮通用技术的扩散都慢。电从发明到工厂电气化，中间隔了四十年。不是因为发电机不好用，是因为要等工厂按电的形状重排产线。</p>
+                <p>AI 现在大概处在「换马达」和「重设产线」之间。工具已经有了，业务流程还没按它的形状重排。</p>
+                <p>这也是为什么企业侧的采用率数据一直好看，财报上却看不出来。高盛那份小企业报告里，86% 在用了，只有 15% 到 18% 真正整合进核心业务。用了和用进去，中间隔的是整个流程改造。</p>
+                <p>所以 Slok 那个数据可能不是「AI 没用」，是「还没被用进去」。</p>
+                <p>区别很大。前者是技术判断，后者是组织问题。</p>
+                <h3>五、该盯哪几个数</h3>
+                <p>先问一句，怎么判断扩散到底到没到？给三个可观察的指标。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-03-watch.webp" alt="该盯哪几个数" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">该盯哪几个数</figcaption>
+                </figure>
+                <p>第一，标普 493 的人均营收。如果这个数在未来四个季度里开始走，说明扩散真的到了。这是最钝但最不容易骗人的指标。</p>
+                <p>第二，数据中心的本地反对率。如果 63% 这个数继续上升，说明基建节奏会被政治拖住，供给侧的乐观预期要打折。</p>
+                <p>第三，企业侧「完全整合」的比例。15% 到 18% 这个数是关键。它往 30% 走，回报就该显形了；一直不动，说明卡在组织而不是技术。</p>
+                <p>三件事里，第二个最急。因为前两个是慢变量，第二个会直接决定未来两年的算力供给曲线。</p>
+                <div class="md-note">本文数据来自 Apollo 首席经济学家 Torsten Slok 的公开分析、CNBC 全美民调、路透社对亚马逊 CEO 安迪·贾西的采访报道，及高盛《AI 经济就是小企业经济》报告。<br><br>「零财务回报」为 Slok 基于标普 493 人均营收与利润率的判断，该指标受多重因素影响，不宜作为单一结论依据。本文仅作事实转述，不构成任何投资建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>AI 日报 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzY5ODIwMzg3MQ==&amp;mid=2247484829&amp;idx=1&amp;sn=f1d2d78bdab091cc8da6f0302b419046" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>数智人每日必读 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzcwOTM2Njc5OQ==&amp;mid=2247485251&amp;idx=2&amp;sn=0bb82db4182f7d72dd19d4bb306ec182" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>腾讯研究院 AI 速递 — 20261026（2026-10-26） · <a href="https://www.sohu.com/a/1092593629_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>华尔街见闻 — 早餐 2026 年 10 月 26 日（2026-10-26） · <a href="https://news.qq.com/rain/a/20261026A02ZDM00" target="_blank" rel="noopener">news.qq.com</a></li>
+                    <li>今日热门速递 — AI 与科技前沿 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzIxNzExNjExOQ==&amp;mid=2654369755&amp;idx=1&amp;sn=a360ed5c4a7980dc8194c800816e940f" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                </ol>
+
+                <h2 id="part-04"><span class="section-no">04</span>四条线，都在挤水分</h2>
+                <p class="part-tags">速览 | 国内外</p>
+                <p>今天的速览，十条。</p>
+                <p>主线是同一件事，能力叙事之外，账本和尺子开始进场。</p>
+                <h4>海外 · 猫王版权方起诉 Anthropic</h4>
+                <p>AuthenTec Brands Group 旗下权利人 10 月 23 日起诉 Anthropic，指控其用 274 首猫王歌曲训练 Claude 且未获授权。</p>
+                <p>索赔标准是每首 15 万美元，合计约 4100 万美元。诉状还称，Claude 在被提示时仍会输出受保护的歌曲。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-04-elvis.webp" alt="按首计价的版权官司" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">按首计价的版权官司</figcaption>
+                </figure>
+                <p>Anthropic 暂未回应。</p>
+                <h4>海外 · Anthropic 递交 S-1，估值两万亿量级</h4>
+                <p>Anthropic 已向 SEC 递交招股书，上半年营收约 163 亿美元。这家 2021 年才成立的公司，五年走到两万亿的量级。</p>
+                <p>据报道，其 IPO 定价区间对应估值 2.3 到 2.5 万亿美元，拟 11 月首周在纳斯达克挂牌，机构认购倍数达 12 倍。麻烦在于，这个数一旦按实，后续每一季都得拿业绩兑。</p>
+                <p>如果成行，规模在科技 IPO 里排在最前面。一家 2021 年才成立的公司，五年走到这个位置。</p>
+                <h4>海外 · Stripe 75 亿美元收购 OpenRouter</h4>
+                <p>据《纽约时报》，支付巨头 Stripe 同意以约 75 亿美元收购 AI 模型聚合与路由平台 OpenRouter。</p>
+                <p>OpenRouter 做的是模型的统一入口，开发者通过一套接口调各家模型。这笔收购买的是分发通道。麻烦在于，通道一旦被买断，定价权就跟着走。</p>
+                <h4>海外 · 算力的两套定价</h4>
+                <p>英伟达拟按每张卡每年约 2000 美元收取智能体软件授权费。别只看硬件，这笔钱收的是软件，商业模式在往订阅挪。</p>
+                <p>同期云侧价格反向分化。AWS 10 月 7 日第三次上调 GPU 预留价格 15%，Google 对部分负载的推理 token 价格下调最高 65%。</p>
+                <p>同样一件事，稀缺的涨，富余的降。这条分界线，比任何发布会都说明市场在往哪走。</p>
+                <h4>国内 · 标准与合规三条</h4>
+                <p>中央网信委印发《国家信息化「十五五」规划》，部署 10 个方面 25 项重点任务，数据要素首次写进信息化领域的五年顶层规划。</p>
+                <p>国标 GB 45438-2025《AI 生成合成内容标识方法》已实施，配套标识平台注册用户超 4200 家，累计完成检测 17 万余次。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-04-standard.webp" alt="尺子正在补齐" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">尺子正在补齐</figcaption>
+                </figure>
+                <p>欧盟那边，AI 法案高风险自评清单上线两周，提交企业突破 6 万家，覆盖医疗、金融、招聘等受监管领域。</p>
+                <h4>海外 · 瑞典政府屏蔽 ChatGPT 与 Claude</h4>
+                <p>瑞典政府办公室自 10 月 26 日起，在公务电脑上屏蔽 ChatGPT 与 Claude，微软 Copilot 成为唯一获批工具。</p>
+                <p>官方给出的考量偏重采购合规与信息安全。</p>
+                <p>这条的分量在于，它把「用哪个模型」变成了采购决策。注意一点，采购决策一旦定下来，切换成本比个人偏好高得多。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-04-sweden.webp" alt="把选模型变成采购决策" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">把选模型变成采购决策</figcaption>
+                </figure>
+                <h4>海外 · OpenAI 联手 NIST 发布智能体安全基准</h4>
+                <p>OpenAI 把内部的安全熔断经验做成公开评测基准，与美国国家标准与技术研究院共建。</p>
+                <p>覆盖自主行动边界、权限收敛、异常回滚三类能力，供第三方模型厂商自测。</p>
+                <p>安全从企业内控变成行业公共品。这个转向是本周最实的一个变化。</p>
+                <h4>国内 · 寒武纪 Q3 与辉羲融资</h4>
+                <p>寒武纪 Q3 营收 35.31 亿元，同比增长 104.47%；归母净利润 14.04 亿元，同比增长 147.74%。公司称增长来自持续拓展市场与 AI 应用落地，同时存货增至 116.65 亿元。</p>
+                <p>具身智能大算力芯片企业辉羲智能完成 Pre-B+ 轮及 B 轮融资，年内累计股权融资超 25 亿元，由北京市人工智能产业投资基金领投。</p>
+                <h4>国内 · 西湖大学 Pinal 登《自然》</h4>
+                <p>西湖大学原发杰、刘建明团队联合港科大（广州）、中科院深圳先进院，构建自然语言驱动的蛋白质设计模型 Pinal。</p>
+                <p>输入一句功能描述即可生成候选蛋白序列。在荧光蛋白、塑料降解酶等四类实验中验证有效，论文 10 月 22 日在线发表于《自然》。</p>
+                <h4>榜单 · 份额靠折扣搬</h4>
+                <p>The Information 报道，OpenAI 对企业客户提供最高 90% 折扣。</p>
+                <p>效果很直接。Rippling 的 OpenAI 编码份额从 5 月的 16% 升到 52%，Anthropic 从 57% 降到 18%。Replit 拿到 30% 以上折扣后，把超 1 亿美元一年的合同转投 OpenAI。</p>
+                <figure class="article-image-block">
+                    <img src="fig-2026-10-27-04-discount.webp" alt="九折抢单的代价" class="chart-img" loading="lazy" decoding="async">
+                    <figcaption class="img-note">九折抢单的代价</figcaption>
+                </figure>
+                <p>一个月时间，两家的位置对调。靠折扣搬来的份额，会不会被下一个折扣搬走？这笔账得往后看。</p>
+                <div class="md-note">本文各条均来自官方发布与公开报道。ARC Prize 复核结果为第三方口径，OpenAI 自测配置未公开；Anthropic 的 IPO 估值与认购倍数来自媒体报道，以正式披露为准；Stripe 收购 OpenRouter 尚未获双方确认；AWS 与 Google 的价格调整以各自官网为准。不构成任何投资建议。</div>
+                <h3>本文信息来源</h3>
+                <ol class="source-list">
+                    <li>腾讯研究院 AI 速递 — 20261026（2026-10-26） · <a href="https://www.sohu.com/a/1092593629_455313" target="_blank" rel="noopener">sohu.com</a></li>
+                    <li>AI 日报 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzY5ODIwMzg3MQ==&amp;mid=2247484829&amp;idx=1&amp;sn=f1d2d78bdab091cc8da6f0302b419046" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>数智人每日必读 — 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzcwOTM2Njc5OQ==&amp;mid=2247485251&amp;idx=2&amp;sn=0bb82db4182f7d72dd19d4bb306ec182" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>今日热门速递 — AI 与科技前沿 2026 年 10 月 26 日（2026-10-26） · <a href="http://mp.weixin.qq.com/s?__biz=MzIxNzExNjExOQ==&amp;mid=2654369755&amp;idx=1&amp;sn=a360ed5c4a7980dc8194c800816e940f" target="_blank" rel="noopener">mp.weixin.qq.com</a></li>
+                    <li>华尔街见闻 — 早餐 2026 年 10 月 26 日（2026-10-26） · <a href="https://news.qq.com/rain/a/20261026A02ZDM00" target="_blank" rel="noopener">news.qq.com</a></li>
+                    <li>ARC Prize — GPT-6 Astra 标准框架复核说明（2026-10-25） · <a href="https://arcprize.org" target="_blank" rel="noopener">arcprize.org</a></li>
+                </ol>
+
+                <p class="original-note">本文首发于公众号「YITENG」。原文：<a href="daily.html" target="_blank" rel="noopener">daily.html</a></p>
+            </div>
+
+            <nav class="issue-pager" aria-label="往期导航">
+                    <a href="issue-023.html">← 第 023 期</a>
+                    <a href="issue-025.html">第 025 期 →</a>
+                </nav>
+
+            <div class="article-nav">
+                <a href="daily.html" class="btn btn-secondary">← 返回科技日报</a>
+            </div>
+
+            <div class="share-bar">
+                <span class="share-label">分享这篇</span>
+                <button class="share-btn" type="button" data-share="copy">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+                    复制链接
+                </button>
+                <button class="share-btn" type="button" data-share="native" id="shareNative" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                    系统分享
+                </button>
+                <a class="share-btn" id="shareWeibo" href="#" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.5 2 5.5 2 7 0"/><circle cx="9" cy="10" r="0.6" fill="currentColor"/><circle cx="15" cy="10" r="0.6" fill="currentColor"/></svg>
+                    微博
+                </a>
+            </div>
+
+            <section class="comments">
+                <h3 class="comments-title">留言</h3>
+                <div class="comments-hint">
+                    评论功能正在接入中，暂时可以通过 <a href="mailto:yitenghsueh@gmail.com">邮件</a> 或 Instagram 找我聊天。
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="页脚导航">
+                <a href="index.html">首页</a>
+                <a href="gallery.html">作品集</a>
+                <a href="daily.html">科技日报</a>
+                <a href="feed.xml">RSS</a>
+            </nav>
+            <p>&copy; 2026 我的个人博客. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到顶部">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="图片查看器">
+        <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭图片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <img id="lightboxImg" src="" alt="">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

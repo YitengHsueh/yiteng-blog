@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ytxue.netlify.app/sitemap.xml
+Disallow: /images-backup.zip
