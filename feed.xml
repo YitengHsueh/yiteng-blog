@@ -5,8 +5,17 @@
         <link>https://ytxue.netlify.app/</link>
         <description>记录技术成长，分享摄影、黑胶音乐、消费电子与环球旅行的生活故事。</description>
         <language>zh-cn</language>
-        <lastBuildDate>Thu, 05 Nov 2026 08:00:00 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 06 Nov 2026 08:00:00 +0800</lastBuildDate>
         <atom:link href="https://ytxue.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>科技日报 034：京东拟采购 300 万台机器人，两年先攒千万小时数据</title>
+            <link>https://ytxue.netlify.app/issue-034.html</link>
+            <guid>https://ytxue.netlify.app/issue-034.html</guid>
+            <pubDate>Fri, 06 Nov 2026 08:00:00 +0800</pubDate>
+            <category>科技日报</category>
+            <description>300 万台机器人。这个数字从乌镇传出来，最容易读成一张巨额订单。（本期另有：claude-mem 给编码 agent 补记忆，11 万星仓库怎么装；高通 6G 终端原型机进博会首次公开，下行带宽 400MHz；科技速览 15 条，系外行星成像、RNA 模型与进博会硬科技）</description>
+        </item>
 
         <item>
             <title>科技日报 033：腾讯混元 Hy4 发布，国产开源模型挤进第一梯队</title>
