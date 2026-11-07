@@ -1,6 +1,6 @@
 // 个人博客 Service Worker：静态资源缓存优先，离线可读
 // 更新站点内容后把 CACHE 版本号 +1，旧缓存会自动清理
-const CACHE = 'yiteng-blog-v37';
+const CACHE = 'yiteng-blog-v38';
 
 const PRECACHE = [
     './',

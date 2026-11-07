@@ -5,8 +5,17 @@
         <link>https://ytxue.netlify.app/</link>
         <description>记录技术成长，分享摄影、黑胶音乐、消费电子与环球旅行的生活故事。</description>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 06 Nov 2026 08:00:00 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 08:00:00 +0800</lastBuildDate>
         <atom:link href="https://ytxue.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+
+        <item>
+            <title>科技日报 035：三季度 DRAM 营收增 369%，出货量仅增 4%</title>
+            <link>https://ytxue.netlify.app/issue-035.html</link>
+            <guid>https://ytxue.netlify.app/issue-035.html</guid>
+            <pubDate>Sat, 07 Nov 2026 08:00:00 +0800</pubDate>
+            <category>科技日报</category>
+            <description>三季度全球 DRAM 营收逼近 2000 亿美元，比去年同期多 369%。（本期另有：NVIDIA 开源 auto-ontology，为 agent 补上指标定义；国产汽车芯片上半年装车 3880 万颗，两年完成量产；科技速览 15 条，逐条标注信源与口径）</description>
+        </item>
 
         <item>
             <title>科技日报 034：京东拟采购 300 万台机器人，两年先攒千万小时数据</title>
